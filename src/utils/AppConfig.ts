@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
-  locale: 'en',
+  site_name: 'Akademia bliskich relacji',
+  title: 'Akademia bliskich relacji',
+  description: 'Akademia bliskich relacji - Gosia Całus',
+  locale: 'pl',
 };

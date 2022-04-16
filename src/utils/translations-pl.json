@@ -1,0 +1,43 @@
+{
+  "index": {
+    "Hero": {
+      "title": "Akademia bliskich relacji",
+      "subtitle": "Powrót do słowiańskich korzeni - szybko, tanio, komfortowo.",
+      "background": ""
+    },
+    "Section1": {
+      "title": "Kim jestem?",
+      "subtitle": "Nazywam się Gosia Całus i pokazuję jak budować relacje i komunikować się w rodzinie."
+    },
+    "About1": {
+      "title": "Od ponad dwóch lat wspieram rodziny – zarówno rodziców jak i małżeństwa w budowaniu relacji opartych na szacunku i empatii.",
+      "subtitle": "Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!",
+      "image": ""
+    },
+    "About2": {
+      "title": "Moje kursy",
+      "subtitle": "Dwukrotnie zorganizowałam grudniowe wyzwanie „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Wydałam również pierwszą wersję kursu „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet.",
+      "image": ""
+    },
+    "About3": {
+      "title": "Newsletter",
+      "subtitle": "Od sierpnia 2021 prowadzę systematyczną wysyłkę „listu do domu”, czyli newslettera o dbaniu o relacje i komunikacje w rodzinie, który czyta kilkaset osób. To jedyny newsletter w całym internecie, który bierze pod uwagę zarówno relację z mężem jak i z dziećmi!",
+      "image": ""
+    },
+    "About4": {
+      "title": "Ebook",
+      "subtitle": "Jestem autorką darmowego ebooka „Jak dbać o relacje w rodzinie, żeby wszyscy domownicy czuli się dobrze”, który możesz pobrać klikając poniżej:",
+      "button": "Pobierz darmowy ebook",
+      "image": ""
+    },
+    "Social": {
+      "title": "Social media",
+      "subtitle": "Moje social media:"
+    },
+    "CTABanner": {
+      "title": "Dołącz do darmowego kursu \"Jak rozwiązywać konflikty w związku\"",
+      "subtitle": "Zapisy do 9.05.2022",
+      "button": "Dołącz do kursu"
+    }
+  }
+}
