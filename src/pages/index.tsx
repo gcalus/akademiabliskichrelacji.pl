@@ -11,9 +11,11 @@ import { NavbarTwoColumns } from '../components/NavbarTwoColumns';
 import { Section } from '../components/Section';
 import { VerticalFeatureRow } from '../components/VerticalFeatureRow';
 import { AppConfig } from '../utils/AppConfig';
+import translationsPl from '../utils/translations-pl.json';
 
 const Index = () => {
   const router = useRouter();
+  const translations = translationsPl;
 
   return (
     <div className="antialiased text-gray-700">
@@ -21,7 +23,10 @@ const Index = () => {
 
       {/* <Hero /> */}
 
-      <Background color="bg-gray-700/50">
+      <Background
+        color="bg-gray-700/50"
+        image="/assets/images/hero-background2.png"
+      >
         <Section yPadding="py-6">
           <NavbarTwoColumns
             logo={
@@ -46,8 +51,8 @@ const Index = () => {
 
         <Section yPadding="pt-20 pb-32">
           <HeroOneButton
-            title={'Akademia bliskich relacji'}
-            description="Powrót do słowiańskich korzeni - szybko, tanio, komfortowo."
+            title={translations.index.Hero.title}
+            description={translations.index.Hero.subtitle}
             button={null}
           />
         </Section>
@@ -56,47 +61,48 @@ const Index = () => {
       {/* <VerticalFeatures /> */}
 
       <Section
-        title="Kim jestem?"
-        description="Nazywam się Gosia Całus i pokazuję jak budować relacje i komunikować się w rodzinie."
+        title={translations.index.Section1.title}
+        description={translations.index.Section1.subtitle}
       >
         <VerticalFeatureRow
-          title="Od ponad dwóch lat wspieram rodziny – zarówno rodziców jak i małżeństwa w budowaniu relacji opartych na szacunku i empatii."
-          description="Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!"
-          image="/assets/images/1.jpg"
+          title={translations.index.About1.title}
+          description={translations.index.About1.subtitle}
+          image={translations.index.About1.image}
           imageAlt=""
         />
         <VerticalFeatureRow
-          title="Moje kursy"
-          description="Dwukrotnie zorganizowałam grudniowe wyzwanie „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Wydałam również pierwszą wersję kursu „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet."
-          image="/assets/images/kurs.png"
+          title={translations.index.About2.title}
+          description={translations.index.About2.subtitle}
+          image={translations.index.About2.image}
           imageAlt="Second feature alt text"
           reverse
         />
         <VerticalFeatureRow
-          title="Newsletter"
-          description="Od sierpnia 2021 prowadzę systematyczną wysyłkę „listu do domu”, czyli newslettera o dbaniu o relacje i komunikacje w rodzinie, który czyta kilkaset osób. To jedyny newsletter w całym internecie, który bierze pod uwagę zarówno relację z mężem jak i z dziećmi!"
-          image="/assets/images/listy.png"
+          title={translations.index.About3.title}
+          description={translations.index.About3.subtitle}
+          image={translations.index.About3.image}
           imageAlt="Third feature alt text"
         />
         <VerticalFeatureRow
-          title="Ebook"
-          description="Jestem autorką darmowego ebooka „Jak dbać o relacje w rodzinie, żeby wszyscy domownicy czuli się dobrze”,
-      który możesz pobrać klikając poniżej:"
-          image="/assets/images/ebook.png"
-          imageAlt="Third feature alt text"
+          title={translations.index.About4.title}
+          description={translations.index.About4.subtitle}
+          image={translations.index.About4.image}
+          imageAlt="Fourth feature alt text"
           reverse
         >
           <div className="whitespace-nowrap mt-3">
             <Link href="https://gosiacalus.pl/ebook">
               <a>
-                <Button variant="outlined">Pobierz darmowy ebook</Button>
+                <Button variant="outlined">
+                  {translations.index.About4.cta}
+                </Button>
               </a>
             </Link>
           </div>
         </VerticalFeatureRow>
         <VerticalFeatureRow
-          title="Social media"
-          description="Moje social media:"
+          title={translations.index.Social.title}
+          description={translations.index.Social.subtitle}
           image="/assets/images/none.png"
           imageAlt=""
         >
@@ -108,12 +114,12 @@ const Index = () => {
 
       <Section>
         <CTABanner
-          title='Dołącz do darmowego kursu "Jak rozwiązywać konflikty w związku"'
-          subtitle="Zapisy do 9.05.2022"
+          title={translations.index.CTABanner.title}
+          subtitle={translations.index.CTABanner.subtitle}
           button={
             <Link href="#">
               <a>
-                <Button xl>Dołącz do kursu</Button>
+                <Button xl>{translations.index.CTABanner.button}</Button>
               </a>
             </Link>
           }
@@ -122,7 +128,10 @@ const Index = () => {
 
       {/* <Footer /> */}
 
-      <Background color="bg-gray-100">
+      <Background
+        color="bg-gray-100"
+        image="/assets/images/hero-background2.png"
+      >
         <Section>
           <FooterCentered
             logo={'Akademia bliskich relacji'}

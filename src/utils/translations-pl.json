@@ -3,7 +3,7 @@
     "Hero": {
       "title": "Akademia bliskich relacji",
       "subtitle": "Powrót do słowiańskich korzeni - szybko, tanio, komfortowo.",
-      "background": ""
+      "background": "/assets/images/hero-background2.png"
     },
     "Section1": {
       "title": "Kim jestem?",
@@ -12,23 +12,24 @@
     "About1": {
       "title": "Od ponad dwóch lat wspieram rodziny – zarówno rodziców jak i małżeństwa w budowaniu relacji opartych na szacunku i empatii.",
       "subtitle": "Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!",
-      "image": ""
+      "image": "/assets/images/1.jpg"
     },
     "About2": {
       "title": "Moje kursy",
       "subtitle": "Dwukrotnie zorganizowałam grudniowe wyzwanie „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Wydałam również pierwszą wersję kursu „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet.",
-      "image": ""
+      "image": "/assets/images/kurs.png"
     },
     "About3": {
       "title": "Newsletter",
       "subtitle": "Od sierpnia 2021 prowadzę systematyczną wysyłkę „listu do domu”, czyli newslettera o dbaniu o relacje i komunikacje w rodzinie, który czyta kilkaset osób. To jedyny newsletter w całym internecie, który bierze pod uwagę zarówno relację z mężem jak i z dziećmi!",
-      "image": ""
+      "image": "/assets/images/listy.png"
     },
     "About4": {
       "title": "Ebook",
       "subtitle": "Jestem autorką darmowego ebooka „Jak dbać o relacje w rodzinie, żeby wszyscy domownicy czuli się dobrze”, który możesz pobrać klikając poniżej:",
       "button": "Pobierz darmowy ebook",
-      "image": ""
+      "image": "/assets/images/ebook.png",
+      "cta": "Pobierz darmowy ebook"
     },
     "Social": {
       "title": "Social media",
