@@ -5,12 +5,13 @@ import { Background } from '../components/Background';
 import { Button } from '../components/Button';
 import { CTABanner } from '../components/CTABanner';
 import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
+import { FeaturesWithImageRow } from '../components/FeaturesWithImageRow';
 import { FooterCentered } from '../components/FooterCentered';
 import { Meta } from '../components/Meta';
 import { NavbarTwoColumns } from '../components/NavbarTwoColumns';
 import { Section } from '../components/Section';
 import { AppConfig } from '../utils/AppConfig';
-import translationsPl from '../utils/index-translations-pl.json';
+import translationsPl from '../utils/konfliktywzwiazku-translations-pl.json';
 
 const Index = () => {
   const router = useRouter();
@@ -26,36 +27,24 @@ const Index = () => {
         color="bg-gray-700/50"
         image="/assets/images/hero-background2.png"
       >
-        <Section className="py-6">
+        <Section className="py-3">
           <NavbarTwoColumns
             logo={
               <img
+                width={100}
                 src={`${router.basePath}/assets/images/logo.png`}
                 alt={'logo'}
               />
             }
           >
-            <li>
-              <Link href="https://gosiacalus.pl/">
-                <a>Blog</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://sklep.gosiacalus.pl/">
-                <a>Sklep</a>
-              </Link>
-            </li>
+            {translations.index.Hero.title}
           </NavbarTwoColumns>
         </Section>
-
-        <Section className="pt-20 pb-32">
+        <Section className="pt-4 pb-10 px-10">
           <header className="text-center drop-shadow-md">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-title font-bold whitespace-pre-line leading-hero">
-              {translations.index.Hero.title}
-            </h1>
-            <div className="text-2xl sm:text-2xl md:text-3xl mt-4 mb-16">
+            <h1 className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero">
               {translations.index.Hero.subtitle}
-            </div>
+            </h1>
           </header>
         </Section>
       </Background>
@@ -63,53 +52,55 @@ const Index = () => {
       {/* <VerticalFeatures /> */}
 
       <Section
+        className="pt-16"
         title={translations.index.Section1.title}
         description={translations.index.Section1.subtitle}
       >
-        <DescriptionWithImageRow
-          title={translations.index.About1.title}
-          description={translations.index.About1.subtitle}
-          image={translations.index.About1.image}
-          imageAlt=""
-        />
-        <DescriptionWithImageRow
-          title={translations.index.About2.title}
-          description={translations.index.About2.subtitle}
-          image={translations.index.About2.image}
-          imageAlt="Second feature alt text"
+        <FeaturesWithImageRow
           reverse
-        />
+          title={''}
+          description={''}
+          image={translations.index.About1.image}
+          imageAlt={''}
+          features={translations.index.About1.features}
+        ></FeaturesWithImageRow>
+      </Section>
+
+      <Section
+        className="pb-3"
+        description={translations.index.Section2.subtitle}
+      />
+
+      <Section className="pt-6">
+        <FeaturesWithImageRow
+          narrowImage
+          title={translations.index.About2.title}
+          description={''}
+          image={translations.index.About2.image}
+          imageAlt={''}
+          features={translations.index.About2.features}
+        ></FeaturesWithImageRow>
+      </Section>
+
+      <Section className="pt-6">
         <DescriptionWithImageRow
+          reverse
           title={translations.index.About3.title}
           description={translations.index.About3.subtitle}
           image={translations.index.About3.image}
-          imageAlt="Third feature alt text"
-        />
-        <DescriptionWithImageRow
-          title={translations.index.About4.title}
-          description={translations.index.About4.subtitle}
-          image={translations.index.About4.image}
-          imageAlt="Fourth feature alt text"
-          reverse
-        >
-          <div className="whitespace-nowrap mt-3">
-            <Link href="https://gosiacalus.pl/ebook">
-              <a>
-                <Button variant="outlined">
-                  {translations.index.About4.cta}
-                </Button>
-              </a>
-            </Link>
-          </div>
-        </DescriptionWithImageRow>
-        {/* <DescriptionWithImageRow
-          title={translations.index.Social.title}
-          description={translations.index.Social.subtitle}
-          image="/assets/images/none.png"
           imageAlt=""
-        >
-          <div></div>
-        </DescriptionWithImageRow> */}
+          textRight
+        />
+      </Section>
+
+      <Section className="pt-6">
+        <FeaturesWithImageRow
+          narrowImage
+          title={translations.index.About4.title}
+          image={translations.index.About4.image}
+          imageAlt={''}
+          features={translations.index.About4.features}
+        ></FeaturesWithImageRow>
       </Section>
 
       {/* <Banner /> */}

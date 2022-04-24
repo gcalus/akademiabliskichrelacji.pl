@@ -3,16 +3,17 @@ import { ReactNode } from 'react';
 import className from 'classnames';
 import { useRouter } from 'next/router';
 
-type IVerticalFeatureRowProps = {
+type IDescriptionWithImageRowProps = {
   title: string;
   description: string;
   image: string;
   imageAlt: string;
   children?: ReactNode;
   reverse?: boolean;
+  textRight?: boolean;
 };
 
-const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
+const DescriptionWithImageRow = (props: IDescriptionWithImageRowProps) => {
   const verticalFeatureClass = className(
     'mt-20',
     'flex',
@@ -20,6 +21,9 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     'items-center',
     {
       'flex-row-reverse': props.reverse,
+    },
+    {
+      'text-center': !props.textRight,
     }
   );
 
@@ -27,9 +31,12 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="w-full md:w-1/2 text-center sm:px-6">
+      <div className="w-full md:w-1/2 sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
-        <div className="mt-6 text-xl leading-9">{props.description}</div>
+        <div
+          className="mt-6 text-xl leading-9"
+          dangerouslySetInnerHTML={{ __html: props.description }}
+        />
         {props.children}
       </div>
 
@@ -44,4 +51,4 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   );
 };
 
-export { VerticalFeatureRow };
+export { DescriptionWithImageRow };

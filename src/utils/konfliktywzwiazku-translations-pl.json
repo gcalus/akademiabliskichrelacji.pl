@@ -1,0 +1,68 @@
+{
+  "index": {
+    "Hero": {
+      "title": "Akademia bliskich relacji",
+      "subtitle": "Darmowy kurs \"Jak rozwiązywać konflikty w związku\"",
+      "background": "/assets/images/hero-background2.png"
+    },
+    "Section1": {
+      "title": "Zamień kłótnie na komunikację!",
+      "subtitle": "Zapisz się na darmowy dwutygodniowy kurs i naucz się jak rozwiązywać konflikty w związku!"
+    },
+    "About1": {
+      "features": [
+        "Jesteś zmęczona/zmęczony ciągłymi kłótniami?",
+        "Masz poczucie, że ciągle kłócicie się o to samo i nie możecie dojść do porozumienia?",
+        "Chciałbyś/chciałabyś żeby w Twoim domu było więcej spokoju i wzajemnego zrozumienia?",
+        "A może unikasz konfliktów i przez to oddalasz się od partnera/partnerki?"
+      ],
+      "image": "/assets/images/kurs1.png"
+    },
+    "Section2": {
+      "subtitle": "Jeśli tak, to darmowy kurs \"jak rozwiązywać konflikty w związku\" pomoże Ci ruszyć z miejsca i zamienić kłótnie, które prowadzą donikąd, w rozmowę pełną szacunku i zrozumienia."
+    },
+    "About2": {
+      "title": "Czego dowiesz się z kursu?",
+      "features": [
+        "Jak nauczyć się współdziałać z mężem/żoną przy rozwiązywaniu konfliktów i dzięki temu znaleźć takie rozwiązanie problemu, które będzie satysfakcjonujące dla każdego",
+        "Podstaw Porozumienia bez Przemocy (NVC)",
+        "W jaki sposób spojrzeć na konflikt, żeby w ogóle chciało Ci się go rozwiązywać",
+        "Jak przestać ranić drugą osobę podczas kłótni",
+        "W jaki sposób komunikować swoje potrzeby, żeby naprawdę zostać usłyszanym",
+        "Co zrobić, żeby dom był bezpieczną przystanią i zaufać, że Twoje potrzeby będą wzięte pod uwagę"
+      ],
+      "image": "/assets/images/kurs2.png"
+    },
+    "Section3": {
+      "subtitle": "Możesz dołączyć do kursu razem z partnerem/partnerką. I do tego gorąco Cię zachęcam! Wtedy każde z Was musi zapisać się osobno.",
+      "subtitle2": "Oczywiście możesz też przerobić kurs sam/sama. I tak każdy z partnerów musi wykonać pracę nad zmianą przekonań i nawyków samodzielnie 🙂 "
+    },
+
+    "About3": {
+      "title": "Kim jest prowadządza kurs?",
+      "subtitle": "Nazywam się Gosia Całus i pokazuję jak budować relacje i komunikować się w rodzinie.<br/>Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!<br/>Dwukrotnie zorganizowałam wyzwanie dla par „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Przeprowadziłam również kurs „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet.<br/>Moi odbiorcy cenią sobie to, że przekazuję konkretne informacje oraz poukładaną wiedzę, dzięki której można od razu zacząć działać!",
+      "image": "/assets/images/1.jpg"
+    },
+
+    "About4": {
+      "title": "Jak wygląda kurs?",
+      "features": [
+        "5 spotkań live na zoomie - każda lekcja kursu przerabiana będzie na osobnym spotkaniu",
+        "1 spotkanie Q&A na żywo, na którym odpowiem na pytania zadane przez uczestników",
+        "wspólne przerabianie kursu na grupach na facebooku (osobna grupa dla mężczyzn i kobiet)",
+        "materiały do pobrania"
+      ],
+      "image": "/assets/images/kurs3.png"
+    },
+
+    "Social": {
+      "title": "Social media",
+      "subtitle": "Moje social media:"
+    },
+    "CTABanner": {
+      "title": "Dołącz do darmowego kursu \"Jak rozwiązywać konflikty w związku\"",
+      "subtitle": "Zapisy do 9.05.2022",
+      "button": "Dołącz do kursu"
+    }
+  }
+}
