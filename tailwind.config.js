@@ -45,6 +45,9 @@ module.exports = {
       lineHeight: {
         hero: '4.5rem',
       },
+      spacing: {
+        hero: '600px',
+      },
     },
   },
   variants: {},
