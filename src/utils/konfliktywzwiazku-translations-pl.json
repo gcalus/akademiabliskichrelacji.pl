@@ -2,8 +2,7 @@
   "index": {
     "Hero": {
       "title": "Akademia bliskich relacji",
-      "subtitle": "Darmowy kurs \"Jak rozwiązywać konflikty w związku\"",
-      "background": "/assets/images/hero-background2.png"
+      "subtitle": "Darmowy kurs \"Jak rozwiązywać konflikty w związku\""
     },
     "Section1": {
       "title": "Zamień kłótnie na komunikację!",
@@ -15,8 +14,7 @@
         "Masz poczucie, że ciągle kłócicie się o to samo i nie możecie dojść do porozumienia?",
         "Chciałbyś/chciałabyś żeby w Twoim domu było więcej spokoju i wzajemnego zrozumienia?",
         "A może unikasz konfliktów i przez to oddalasz się od partnera/partnerki?"
-      ],
-      "image": "/assets/images/kurs1.png"
+      ]
     },
     "Section2": {
       "subtitle": "Jeśli tak, to darmowy kurs \"jak rozwiązywać konflikty w związku\" pomoże Ci ruszyć z miejsca i zamienić kłótnie, które prowadzą donikąd, w rozmowę pełną szacunku i zrozumienia."
@@ -30,8 +28,7 @@
         "Jak przestać ranić drugą osobę podczas kłótni",
         "W jaki sposób komunikować swoje potrzeby, żeby naprawdę zostać usłyszanym",
         "Co zrobić, żeby dom był bezpieczną przystanią i zaufać, że Twoje potrzeby będą wzięte pod uwagę"
-      ],
-      "image": "/assets/images/kurs2.png"
+      ]
     },
     "Section3": {
       "subtitle": "Możesz dołączyć do kursu razem z partnerem/partnerką. I do tego gorąco Cię zachęcam! Wtedy każde z Was musi zapisać się osobno.",
@@ -40,8 +37,7 @@
 
     "About3": {
       "title": "Kim jest prowadządza kurs?",
-      "subtitle": "Nazywam się Gosia Całus i pokazuję jak budować relacje i komunikować się w rodzinie.<br/>Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!<br/>Dwukrotnie zorganizowałam wyzwanie dla par „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Przeprowadziłam również kurs „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet.<br/>Moi odbiorcy cenią sobie to, że przekazuję konkretne informacje oraz poukładaną wiedzę, dzięki której można od razu zacząć działać!",
-      "image": "/assets/images/1.jpg"
+      "subtitle": "Nazywam się Gosia Całus i pokazuję jak budować relacje i komunikować się w rodzinie.<br/>Pomagam w zrozumieniu siebie samego i pokazuję jak bardzo codzienne relacje i komunikaty wpływają na jakość życia. Dlatego uczę tego co zrobić, żeby czuć się dobrze w swojej rodzinie i jak dbać o siebie i najbliższych!<br/>Dwukrotnie zorganizowałam wyzwanie dla par „Jestem dla Ciebie”, w którym łącznie wzięło udział 550 osób. Przeprowadziłam również kurs „Jak rozwiązywać konflikty w związku”, w którym wzięło udział 400 kobiet.<br/>Moi odbiorcy cenią sobie to, że przekazuję konkretne informacje oraz poukładaną wiedzę, dzięki której można od razu zacząć działać!"
     },
 
     "About4": {
@@ -52,8 +48,7 @@
         "wspólne przerabianie kursu na grupach na facebooku (osobna grupa dla mężczyzn i kobiet)",
         "nagrania spotkań na żywo, które będzie można obejrzeć do 29.05",
         "materiały do pobrania"
-      ],
-      "image": "/assets/images/kurs3.png"
+      ]
     },
 
     "Social": {

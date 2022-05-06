@@ -1,23 +1,42 @@
 import { ReactNode } from 'react';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
+import logoDefault from '../../public/assets/images/logo.png';
+
 type INavbarProps = {
-  logo: ReactNode;
-  children: ReactNode;
+  logo?: StaticImageData;
+  children?: ReactNode;
 };
 
-const NavbarTwoColumns = (props: INavbarProps) => (
-  <div className="flex flex-wrap justify-between items-center px-3 drop-shadow-md">
-    <div>
+const NavbarTwoColumns = ({
+  logo = logoDefault,
+  children = (
+    <>
+      <li>
+        <Link href="https://gosiacalus.pl/">
+          <a>Blog</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="https://sklep.gosiacalus.pl/">
+          <a>Sklep</a>
+        </Link>
+      </li>
+    </>
+  ),
+}: INavbarProps) => (
+  <header className="flex flex-wrap justify-between items-center px-6 py-6 drop-shadow-md max-w-screen-xl mx-auto">
+    <div className="w-36">
       <Link href="/">
-        <a>{props.logo}</a>
+        <a>{<Image src={logo} alt={'logo'} />}</a>
       </Link>
     </div>
 
     <nav>
       <ul className="navbar flex items-center font-bold text-2xl">
-        {props.children}
+        {children}
       </ul>
     </nav>
 
@@ -32,7 +51,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
         }
       `}
     </style>
-  </div>
+  </header>
 );
 
 export { NavbarTwoColumns };

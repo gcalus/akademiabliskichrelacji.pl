@@ -1,21 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
-import { Background } from '../components/Background';
+import image3 from '../../public/assets/images/1.jpg';
+import image1 from '../../public/assets/images/kurs1.png';
+import image2 from '../../public/assets/images/kurs2.png';
+import image4 from '../../public/assets/images/kurs3.png';
+import logo from '../../public/assets/images/logo.png';
 import { Button } from '../components/Button';
 import { CTABanner } from '../components/CTABanner';
 import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
 import { FeaturesWithImageRow } from '../components/FeaturesWithImageRow';
 import { FooterCentered } from '../components/FooterCentered';
 import { Meta } from '../components/Meta';
-import { NavbarTwoColumns } from '../components/NavbarTwoColumns';
 import { Section } from '../components/Section';
+import { StickyBackground } from '../components/StickyBackground';
 import { AppConfig } from '../utils/AppConfig';
 import translationsPl from '../utils/konfliktywzwiazku-translations-pl.json';
 
 const Index = () => {
-  const router = useRouter();
   const translations = translationsPl;
 
   return (
@@ -24,44 +26,27 @@ const Index = () => {
 
       {/* <Hero /> */}
 
-      <Background
-        backgroundHeightSpacing={{ h: 'h-96', top: 'top-96' }}
-        backgroundImage={
-          <Image
-            alt=""
-            src="/assets/images/hero-background2.png"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
-        }
-      >
-        <Section className="py-3">
-          <NavbarTwoColumns
-            logo={
-              <img
-                width={100}
-                src={`${router.basePath}/assets/images/logo.png`}
-                alt={'logo'}
-              />
-            }
-          >
+      <StickyBackground backgroundHeightSpacing={{ h: 'h-96', top: 'top-96' }}>
+        <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md">
+          <nav className="flex gap-4 justify-between items-center font-bold text-2xl">
+            <Link href="/">
+              <a>
+                {<Image src={logo} alt={'logo'} width={100} height={100} />}
+              </a>
+            </Link>
+
             {translations.index.Hero.title}
-          </NavbarTwoColumns>
-        </Section>
-        <Section className="pt-4 pb-10 px-10">
-          <header className="text-center drop-shadow-md">
-            <h1 className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero">
-              {translations.index.Hero.subtitle}
-            </h1>
-          </header>
-        </Section>
-      </Background>
+          </nav>
+          <h1 className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero pt-4 text-center">
+            {translations.index.Hero.subtitle}
+          </h1>
+        </header>
+      </StickyBackground>
 
       {/* <VerticalFeatures /> */}
 
       <Section
-        className="pt-16"
+        className="pt-16 bg-white"
         title={translations.index.Section1.title}
         description={translations.index.Section1.subtitle}
       >
@@ -69,8 +54,7 @@ const Index = () => {
           reverse
           title={''}
           description={''}
-          image={translations.index.About1.image}
-          imageAlt={''}
+          image={image1}
           features={translations.index.About1.features}
         ></FeaturesWithImageRow>
       </Section>
@@ -85,8 +69,7 @@ const Index = () => {
           narrowImage
           title={translations.index.About2.title}
           description={''}
-          image={translations.index.About2.image}
-          imageAlt={''}
+          image={image2}
           features={translations.index.About2.features}
         ></FeaturesWithImageRow>
       </Section>
@@ -96,8 +79,7 @@ const Index = () => {
           reverse
           title={translations.index.About3.title}
           description={translations.index.About3.subtitle}
-          image={translations.index.About3.image}
-          imageAlt=""
+          image={image3}
           textRight
         />
       </Section>
@@ -106,8 +88,7 @@ const Index = () => {
         <FeaturesWithImageRow
           narrowImage
           title={translations.index.About4.title}
-          image={translations.index.About4.image}
-          imageAlt={''}
+          image={image4}
           features={translations.index.About4.features}
         ></FeaturesWithImageRow>
       </Section>

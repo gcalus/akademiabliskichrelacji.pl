@@ -1,51 +1,53 @@
 import { ReactNode } from 'react';
 
 import className from 'classnames';
-import { useRouter } from 'next/router';
+import Image from 'next/image';
+
+import imageDefault from '../../public/assets/images/kurs2.png';
 
 type IDescriptionWithImageRowProps = {
-  title: string;
-  description: string;
-  image: string;
-  imageAlt: string;
-  children?: ReactNode;
+  title?: string;
+  description?: string;
+  image: StaticImageData;
   reverse?: boolean;
   textRight?: boolean;
+  children?: ReactNode;
 };
 
-const DescriptionWithImageRow = (props: IDescriptionWithImageRowProps) => {
+const DescriptionWithImageRow = ({
+  title,
+  description,
+  image = imageDefault,
+  reverse,
+  textRight,
+  children,
+}: IDescriptionWithImageRowProps) => {
   const verticalFeatureClass = className(
     'mt-20',
     'flex',
     'flex-wrap',
     'items-center',
     {
-      'flex-row-reverse': props.reverse,
+      'flex-row-reverse': reverse,
     },
     {
-      'text-center': !props.textRight,
+      'text-center': !textRight,
     }
   );
-
-  const router = useRouter();
 
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full md:w-1/2 sm:px-6">
-        <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
+        <h3 className="text-3xl text-gray-900 font-semibold">{title}</h3>
         <div
           className="mt-6 text-xl leading-9"
-          dangerouslySetInnerHTML={{ __html: props.description }}
+          dangerouslySetInnerHTML={{ __html: description || '' }}
         />
-        {props.children}
+        {children}
       </div>
 
-      <div className="w-full md:w-1/2 p-6">
-        <img
-          className="rounded-2xl mx-auto"
-          src={`${router.basePath + props.image}`}
-          alt={props.imageAlt}
-        />
+      <div className="w-full md:w-1/2 p-6 mx-auto">
+        <Image src={image} alt="" className="rounded-2xl" placeholder="blur" />
       </div>
     </div>
   );
