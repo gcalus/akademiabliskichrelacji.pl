@@ -5,8 +5,8 @@ import { FooterIconList } from './FooterIconList';
 
 type ICenteredFooterProps = {
   logo: ReactNode;
-  iconList: ReactNode;
-  children: ReactNode;
+  iconList?: ReactNode;
+  children?: ReactNode;
 };
 
 const FooterCentered = (props: ICenteredFooterProps) => (
@@ -14,7 +14,7 @@ const FooterCentered = (props: ICenteredFooterProps) => (
     {props.logo}
 
     <nav>
-      <ul className="navbar mt-5 flex flex-row justify-center font-medium text-xl text-gray-800">
+      <ul className="navbar mt-5 flex flex-row justify-center font-medium text-xl text-gray-800 gap-4">
         {props.children}
       </ul>
     </nav>
@@ -26,14 +26,6 @@ const FooterCentered = (props: ICenteredFooterProps) => (
     <div className="mt-8 text-sm">
       <FooterCopyright />
     </div>
-
-    <style jsx>
-      {`
-        .navbar :global(li) {
-          @apply mx-4;
-        }
-      `}
-    </style>
   </div>
 );
 
