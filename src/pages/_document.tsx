@@ -19,7 +19,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="antialiased text-gray-700">
           <Main />
           <NextScript />
         </body>

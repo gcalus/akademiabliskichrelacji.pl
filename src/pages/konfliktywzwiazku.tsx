@@ -21,13 +21,13 @@ const Index = () => {
   const translations = translationsPl;
 
   return (
-    <div className="antialiased text-gray-700">
+    <>
       <Meta title={AppConfig.title} description={AppConfig.description} />
 
       {/* <Hero /> */}
 
       <StickyBackground backgroundHeightSpacing={{ h: 'h-96', top: 'top-96' }}>
-        <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md">
+        <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md h-full flex flex-col">
           <nav className="flex gap-4 justify-between items-center font-bold text-2xl">
             <Link href="/">
               <a>
@@ -37,7 +37,7 @@ const Index = () => {
 
             {translations.index.Hero.title}
           </nav>
-          <h1 className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero pt-4 text-center">
+          <h1 className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero pb-6 text-center my-auto">
             {translations.index.Hero.subtitle}
           </h1>
         </header>
@@ -114,7 +114,7 @@ const Index = () => {
       <Section className="py-16 bg-gray-100">
         <FooterCentered logo={'Śledź nas na social mediach:'}></FooterCentered>
       </Section>
-    </div>
+    </>
   );
 };
 

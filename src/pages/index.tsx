@@ -19,14 +19,14 @@ const Index = () => {
   const translations = translationsPl;
 
   return (
-    <div className="antialiased text-gray-700">
+    <>
       <Meta title={AppConfig.title} description={AppConfig.description} />
 
       {/* <Hero /> */}
 
       <StickyBackground>
         <NavbarTwoColumns />
-        <div className="text-center drop-shadow-md py-20">
+        <div className="text-center drop-shadow-md py-20 px-3">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-title font-bold whitespace-pre-line leading-hero">
             {translations.index.Hero.title}
           </h1>
@@ -106,7 +106,7 @@ const Index = () => {
       <Section className="py-16 bg-gray-100">
         <FooterCentered logo={'Śledź nas na social mediach:'}></FooterCentered>
       </Section>
-    </div>
+    </>
   );
 };
 
