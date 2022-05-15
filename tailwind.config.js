@@ -41,12 +41,22 @@ module.exports = {
           800: '#2d3748',
           900: '#1a202c',
         },
+        purple: {
+          dark: '#391a3c',
+        },
       },
       lineHeight: {
         hero: '1.5em',
       },
       spacing: {
         hero: '600px',
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
       },
     },
   },

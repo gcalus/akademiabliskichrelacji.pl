@@ -6,13 +6,14 @@ import Image from 'next/image';
 import imageDefault from '../../public/assets/images/kurs2.png';
 
 type IFeaturesWithImageRowProps = {
-  title?: string;
+  title?: string | ReactNode;
   description?: string;
   image: StaticImageData;
   reverse?: boolean;
   children?: ReactNode;
   features: string[];
   narrowImage?: boolean;
+  punctor?: string | ReactNode;
 };
 
 const FeaturesWithImageRow = ({
@@ -23,13 +24,14 @@ const FeaturesWithImageRow = ({
   children,
   features,
   narrowImage,
+  punctor = '–',
 }: IFeaturesWithImageRowProps) => {
   const verticalFeatureClass = className('flex', 'flex-wrap', 'items-center', {
     'flex-row-reverse': reverse,
   });
 
   const class2 = className('w-full', 'sm:px-6', {
-    'md:w-2/3': narrowImage,
+    'lg:w-2/3': narrowImage,
     'md:w-1/2': !narrowImage,
   });
 
@@ -40,7 +42,7 @@ const FeaturesWithImageRow = ({
     'w-full',
     'max-w-[400px]',
     {
-      'md:w-1/3': narrowImage,
+      'lg:w-1/3': narrowImage,
       'md:w-1/2': !narrowImage,
     }
   );
@@ -53,7 +55,7 @@ const FeaturesWithImageRow = ({
         <ul className="mt-6 text-xl leading-9 list-none">
           {features.map((f) => (
             <li key={f} className="mb-2">
-              – {f}
+              {punctor} {f}
             </li>
           ))}
         </ul>

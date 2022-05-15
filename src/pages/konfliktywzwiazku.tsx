@@ -111,7 +111,7 @@ const Index = () => {
 
       {/* <Footer /> */}
 
-      <Section className="py-16 bg-gray-100">
+      <Section className="py-6 bg-gray-100">
         <FooterCentered logo={'Śledź nas na social mediach:'}></FooterCentered>
       </Section>
     </>
