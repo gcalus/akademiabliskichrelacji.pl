@@ -7,7 +7,7 @@ import imageDefault from '../../public/assets/images/kurs2.png';
 
 type IDescriptionWithImageRowProps = {
   title?: string;
-  description?: string;
+  description?: string | ReactNode;
   image: StaticImageData;
   reverse?: boolean;
   textRight?: boolean;
@@ -39,10 +39,14 @@ const DescriptionWithImageRow = ({
     <div className={verticalFeatureClass}>
       <div className="w-full md:w-1/2 sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{title}</h3>
-        <div
-          className="mt-6 text-xl leading-9"
-          dangerouslySetInnerHTML={{ __html: description || '' }}
-        />
+        {typeof description === 'string' ? (
+          <div
+            className="mt-6 text-xl leading-9"
+            dangerouslySetInnerHTML={{ __html: description || '' }}
+          />
+        ) : (
+          <div className="mt-6 text-xl leading-9">{description}</div>
+        )}
         {children}
       </div>
 

@@ -19,7 +19,7 @@ const Section = (props: ISectionProps) => (
           <h2 className="text-4xl text-gray-900 font-bold">{props.title}</h2>
         )}
         {props.description && (
-          <div className={`${props.title && 'mt-4'} text-xl`}>
+          <div className={`${props.title && 'mt-4'} text-xl text-justify`}>
             {props.description}
           </div>
         )}
