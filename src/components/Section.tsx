@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 type ISectionProps = {
-  title?: string;
+  title?: string | JSX.Element;
   description?: string | ReactNode;
   className?: string;
   children?: ReactNode;
@@ -19,7 +19,11 @@ const Section = (props: ISectionProps) => (
           <h2 className="text-4xl text-gray-900 font-bold">{props.title}</h2>
         )}
         {props.description && (
-          <div className={`${props.title && 'mt-4'} text-xl text-justify`}>
+          <div
+            className={`${
+              props.title && 'mt-4'
+            } text-xl text-justify max-w-prose mx-auto`}
+          >
             {props.description}
           </div>
         )}

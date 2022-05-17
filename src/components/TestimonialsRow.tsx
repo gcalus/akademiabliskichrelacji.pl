@@ -4,18 +4,16 @@ type ITestimonialsRowProps = {
 
 const TestimonialsRow = ({ testimonials }: ITestimonialsRowProps) => {
   return (
-    <div className="flex flex-col md:flex-row max-w-2xl gap-4">
+    <div className="flex flex-col md:flex-row gap-4 md:flex-wrap">
       {testimonials.map((t, i) => (
         <div
-          className="max-w-xs mx-auto bg-white rounded-xl p-5 shadow-lg m-2"
+          className="max-w-md mx-auto bg-white rounded-xl p-5 shadow-lg m-2"
           key={i}
         >
           <p>{t.text}</p>
-          <div className="mt-5 flex items-center">
+          <div className="mt-5 flex items-center gap-3">
             {t.image}
-            <div className="ml-3">
-              <h3 className="font-semibold">{t.name}</h3>
-            </div>
+            <h3 className="font-semibold">{t.name}</h3>
           </div>
         </div>
       ))}

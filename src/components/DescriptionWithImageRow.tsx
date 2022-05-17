@@ -37,7 +37,7 @@ const DescriptionWithImageRow = ({
 
   return (
     <div className={verticalFeatureClass}>
-      <div className="w-full md:w-1/2 sm:px-6">
+      <div className="w-full lg:w-1/2 sm:px-6">
         <h3 className="text-3xl text-gray-900 font-semibold">{title}</h3>
         {typeof description === 'string' ? (
           <div
@@ -45,12 +45,14 @@ const DescriptionWithImageRow = ({
             dangerouslySetInnerHTML={{ __html: description || '' }}
           />
         ) : (
-          <div className="mt-6 text-xl leading-9">{description}</div>
+          <div className="mt-6 text-xl leading-9 max-w-prose">
+            {description}
+          </div>
         )}
         {children}
       </div>
 
-      <div className="w-full md:w-1/2 p-6 mx-auto">
+      <div className="w-full lg:w-1/2 p-6 mx-auto">
         <Image src={image} alt="" className="rounded-2xl" placeholder="blur" />
       </div>
     </div>

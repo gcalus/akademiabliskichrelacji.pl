@@ -2,23 +2,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import image3 from '../../public/assets/images/1.jpg';
+import adrianaImage from '../../public/assets/images/adriana.jpg';
+import agnieszkaImage from '../../public/assets/images/agnieszka.jpg';
+import annaImage from '../../public/assets/images/anna.jpg';
 import womanImage from '../../public/assets/images/creative-woman.png';
 import ideaImage from '../../public/assets/images/idea.png';
 import image1 from '../../public/assets/images/kurs1.png';
 import logo from '../../public/assets/images/logo.png';
+import majaImage from '../../public/assets/images/maja.jpg';
 import questionsImage2 from '../../public/assets/images/question4.png';
 import questionsImage from '../../public/assets/images/questions2.png';
+import { BigFeaturesRow } from '../components/BigFeaturesRow';
 import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
 import { FeaturesRow } from '../components/FeaturesRow';
 import { FeaturesWithImageRow } from '../components/FeaturesWithImageRow';
 import { FooterCentered } from '../components/FooterCentered';
 import { FundamentButton } from '../components/FundamentButton';
+import { GroupIcon } from '../components/GroupIcon';
 import { Meta } from '../components/Meta';
 import { PricingCardRow } from '../components/PricingCardRow';
 import { Section } from '../components/Section';
 import { ShortDivider } from '../components/ShortDivider';
 import { StickyBackground } from '../components/StickyBackground';
 import { TestimonialsRow } from '../components/TestimonialsRow';
+import { UserIcon } from '../components/UserIcon';
+import { UsersIcon } from '../components/UsersIcon';
 import { AppConfig } from '../utils/AppConfig';
 
 const Index = () => {
@@ -216,42 +224,46 @@ const Index = () => {
       </Section>
 
       <Section
-        className="pt-6 max-w-prose"
+        className="pt-6"
         title={
-          'Możesz dołączyć do kursu niezależnie od tego jaki masz staż w swoim związku.'
+          <p className="max-w-prose">
+            Możesz dołączyć do kursu niezależnie od tego jaki masz staż w swoim
+            związku.
+          </p>
         }
         description={
-          'Tematy, które będę poruszać i problemy, nad którymi będziemy wspólnie pracować, są uniwersalne i fundamentalne do tego, żeby zbudować dobrą relację z partnerem! Możesz dołączyć do kursu niezależnie od Twojego stopnia zadowolenia z relacji. Pomogę Ci zmienić perspektywę i dam gotowe narzędzia do pracy.'
+          <p className="max-w-prose mx-auto">
+            Tematy, które będę poruszać i problemy, nad którymi będziemy
+            wspólnie pracować, są uniwersalne i fundamentalne do tego, żeby
+            zbudować dobrą relację z partnerem! Możesz dołączyć do kursu
+            niezależnie od Twojego stopnia zadowolenia z relacji. Pomogę Ci
+            zmienić perspektywę i dam gotowe narzędzia do pracy.
+          </p>
         }
       >
-        <h2 className="text-black text-xl font-semibold">
-          Jak wygląda praca w kursie? TU ZROBIĆ W FORMIE KÓŁECZEK!!!
-        </h2>
-        <h3 className="text-black text-xl mt-2">Praca indywidualna</h3>
-        <p>
-          Otrzymasz dwuletni dostęp do platformy kursowej na której znajdziesz
-          nagrania video do każdego modułu kursu (8 video). Do kursu dołączony
-          jest obszerny 70-stronnicowy workbook, w którym znajdziesz ćwiczenia
-          do każdej lekcji.
-        </p>
-        <p className="text-black text-xl mt-2">Praca w grupie</p>
-        <p>
-          Dostaniesz dostęp do zamkniętej grupy na facebooku, w której będą
-          tylko uczestniczki kursu. Dodatkowo wszystkie spotkania na zoomie będą
-          odbywać się w tej samej grupie kobiet, dzięki czemu uda nam się
-          nawiązać bliższy kontakt. Grupa jest po to, żeby wzajemnie się
-          wspierać i motywować!
-        </p>
-        <p className="text-black text-xl mt-2">Praca 1:1 ze mną</p>
-        <p>
-          Po przerobieniu materiałów kursowych będziesz mogła umówić się ze mną
-          na 45-minutową indywidualną konsultację. Jeśli uznasz, że potrzebujesz
-          lub chciałabyś spotkać się jeszcze raz, to umówimy się na kolejną
-          sesję. Na konsultacjach będziesz mogła porozmawiać o tym, czym nie
-          mogłaś lub nie chciałaś dzielić się z grupą. Wesprę Cię również w
-          razie kryzysu - wywołanego przez czynniki zewnętrzne lub takim, który
-          może się zdarzyć przez głębszą analizę przeszłości związanym z kursem.
-        </p>
+        <BigFeaturesRow
+          title="Jak wygląda praca w kursie?"
+          features={[
+            {
+              title: 'Praca indywidualna',
+              image: <UserIcon />,
+              feature:
+                'Otrzymasz dwuletni dostęp do platformy kursowej na której znajdziesz nagrania video do każdego modułu kursu (8 video). Do kursu dołączony jest obszerny 70-stronnicowy workbook, w którym znajdziesz ćwiczenia do każdej lekcji.',
+            },
+            {
+              title: 'Praca w grupie',
+              image: <GroupIcon />,
+              feature:
+                'Dostaniesz dostęp do zamkniętej grupy na facebooku, w której będą tylko uczestniczki kursu. Dodatkowo wszystkie spotkania na zoomie będą odbywać się w tej samej grupie kobiet, dzięki czemu uda nam się nawiązać bliższy kontakt. Grupa jest po to, żeby wzajemnie się wspierać i motywować!',
+            },
+            {
+              title: 'Praca 1:1 ze mną',
+              image: <UsersIcon />,
+              feature:
+                'Po przerobieniu materiałów kursowych będziesz mogła umówić się ze mną na 45-minutową indywidualną konsultację. Jeśli uznasz, że potrzebujesz lub chciałabyś spotkać się jeszcze raz, to umówimy się na kolejną sesję. Na konsultacjach będziesz mogła porozmawiać o tym, czym nie mogłaś lub nie chciałaś dzielić się z grupą. Wesprę Cię również w razie kryzysu - wywołanego przez czynniki zewnętrzne lub takim, który może się zdarzyć przez głębszą analizę przeszłości związanym z kursem.',
+            },
+          ]}
+        />
       </Section>
 
       <Section className="pt-6 max-w-prose">
@@ -277,7 +289,7 @@ const Index = () => {
       </Section>
 
       <Section
-        className="py-6 max-w-prose"
+        className="py-6"
         title={
           'Odkryj sprawdzone metody i narzędzia, które od razu wprowadzisz w życie i zmienisz swoją relację na lepsze!'
         }
@@ -300,31 +312,55 @@ const Index = () => {
         <TestimonialsRow
           testimonials={[
             {
-              text: 'fdsfdsafds fdsfd saf dsfdsfdsafd s fds fdsaf dsfd sfdsafd sfd sf dsa fds',
-              name: 'fdag',
+              text: '"Dla mnie to był fajny czas, żeby się przyglądać naszej relacji. Czułam się zaproszona ale nie przymuszona i sprawdzałam co mi/nam pasuje. Bardzo super, że zadania były takie różnorodne i też takie proste. Dla mnie to było trudne, że to był czas adwentu i czułam się przeciążona. Chciałabym wrócić do tego w innym czasie i dodać jeszcze jakieś swoje zadania np pograc w gre z młodości wrócić do starych zdjęć, wypisać sobie jakieś romantyczne wspomnienia. Bardzo lubię taką pracę wewnętrzną. Pewnie samej by mi było trudno wymyślić tyle konkretów. Stwierdzam, że nasze małżeństwo jest unikatowe. Ale cieszę się tym co NASZE:)"',
+              name: 'Maja',
               image: (
-                <Image alt="" src={questionsImage2} height={20} width={20} />
+                <Image
+                  alt=""
+                  src={majaImage}
+                  height={60}
+                  width={60}
+                  className="rounded-full"
+                />
               ),
             },
             {
-              text: 'fdsfdsafds fdsfd saf dsfdsfdsafd s fds fdsaf dsfd sfdsafd sfd sf dsa fds',
-              name: 'fdag',
+              text: '"Dzięki Gosia za twoją pracę 🙂 to zadziwiające, jak dużo można zmienić za pomocą trochę lepszego komunikowania czego właściwie się chce. I to nie tylko w małżeństwie ale ogólnie, w każdym środowisku. Super, że szerzysz wiedzę jak to wprowadzać w życie."',
+              name: 'Agnieszka',
               image: (
-                <Image alt="" src={questionsImage2} height={20} width={20} />
+                <Image
+                  alt=""
+                  src={agnieszkaImage}
+                  height={60}
+                  width={60}
+                  className="rounded-full"
+                />
               ),
             },
             {
-              text: 'fdsfdsafds fdsfd saf dsfdsfdsafd s fds fdsaf dsfd sfdsafd sfd sf dsa fds',
-              name: 'fdag',
+              text: '"Super wyzwanie Najbardziej podobało mi się, że właściwie po 24 dniach wchodzi to w nawyk, takie codziennie myślenie "a jak jeszcze mogłabym Mu uprzyjemnić dzień/zrobić coś dla niego" . Plus za różnorodność i w większości przypadków prostotę zadań No i właściwie można sobie do tego później wracać po inspiracje . 24 dzień też był miłym zaskoczeniem."',
+              name: 'Adriana',
               image: (
-                <Image alt="" src={questionsImage2} height={20} width={20} />
+                <Image
+                  alt=""
+                  src={adrianaImage}
+                  height={60}
+                  width={60}
+                  className="rounded-full"
+                />
               ),
             },
             {
-              text: 'fdsfdsafds fdsfd saf dsfdsfdsafd s fds fdsaf dsfd sfdsafd sfd sf dsa fds',
-              name: 'fdag',
+              text: '"Chciałabym Tobie bardzo podziękować za ten kurs! Chociaż sama dużo czytam i staram się, aby moje relacje w małżeństwie były jak najlepsze, to w tym trudnym organizacyjnie dla mnie czasie (ponieważ 2 miesiące temu przyszedł na świat mój drugi synek ) potrzebowałam kogoś, Kto mi o tym przypomni i da mocnego kopa do działania - to byłaś Ty. Kurs przede wszystkim podobał mi się ze względu na konkrety. Bardzo fajnie opisujesz problemy i rozwiązania z jakich możemy skorzystać. Ponadto to, co uwielbiam to Twój głos. Uważam, że masz w sobie mnóstwo ciepła i zrozumienia, dzięki temu to co mówisz - po prostu do mnie dociera. [...] Pomyślałam, że nie jestem z tym sama - to takie dodanie mi otuchy podczas kursu. No i fajnie,że dziś kursy dostępne są w takich formach - mogłam usypiać dwóch synów i jednocześnie słuchać Ciebie!"',
+              name: 'Anna',
               image: (
-                <Image alt="" src={questionsImage2} height={20} width={20} />
+                <Image
+                  alt=""
+                  src={annaImage}
+                  height={60}
+                  width={60}
+                  className="rounded-full"
+                />
               ),
             },
           ]}

@@ -32,7 +32,7 @@ const FeaturesWithImageRow = ({
 
   const class2 = className('w-full', 'sm:px-6', {
     'lg:w-2/3': narrowImage,
-    'md:w-1/2': !narrowImage,
+    'lg:w-1/2': !narrowImage,
   });
 
   const class3 = className(
@@ -43,7 +43,7 @@ const FeaturesWithImageRow = ({
     'max-w-[400px]',
     {
       'lg:w-1/3': narrowImage,
-      'md:w-1/2': !narrowImage,
+      'lg:w-1/2': !narrowImage,
     }
   );
 
@@ -52,7 +52,7 @@ const FeaturesWithImageRow = ({
       <div className={class2}>
         <h3 className="text-3xl text-gray-900 font-semibold">{title}</h3>
         <div className="mt-6 text-xl leading-9">{description}</div>
-        <ul className="mt-6 text-xl leading-9 list-none">
+        <ul className="mt-6 text-xl leading-9 list-none max-w-2xl">
           {features.map((f) => (
             <li key={f} className="mb-2">
               {punctor} {f}
