@@ -2,14 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import image3 from '../../public/assets/images/1.jpg';
-import adrianaImage from '../../public/assets/images/adriana.jpg';
-import agnieszkaImage from '../../public/assets/images/agnieszka.jpg';
-import annaImage from '../../public/assets/images/anna.jpg';
+import womanImage2 from '../../public/assets/images/certificate-woman.png';
 import womanImage from '../../public/assets/images/creative-woman.png';
 import ideaImage from '../../public/assets/images/idea.png';
 import image1 from '../../public/assets/images/kurs1.png';
 import logo from '../../public/assets/images/logo.png';
-import majaImage from '../../public/assets/images/maja.jpg';
 import questionsImage2 from '../../public/assets/images/question4.png';
 import questionsImage from '../../public/assets/images/questions2.png';
 import { BigFeaturesRow } from '../components/BigFeaturesRow';
@@ -173,12 +170,15 @@ const Index = () => {
                 w ciągu zaledwie kilku lat kompletnie odmieniło moje życie.
               </p>
               <p>
-                Dziś jestem w zupełnie innym miejscu. Buduję moją relację z
-                mężem świadomie i z szacunkiem zarówno do siebie samej jak i
-                niego. Odzyskałam moją sprawczość i nauczyłam się dbać o moje
-                potrzeby i granice. Wiem, które schematy komunikacyjne i myślowe
-                sprawiały, że zamiast relacji budowałam z moim mężem mur. Udało
-                się go zburzyć i mogę pokazać Ci jak to zrobić!
+                <span className="font-bold">
+                  Dziś jestem w zupełnie innym miejscu.
+                </span>{' '}
+                Buduję moją relację z mężem świadomie i z szacunkiem zarówno do
+                siebie samej jak i niego. Odzyskałam moją sprawczość i nauczyłam
+                się dbać o moje potrzeby i granice. Wiem, które schematy
+                komunikacyjne i myślowe sprawiały, że zamiast relacji budowałam
+                z moim mężem mur. Udało się go zburzyć i mogę pokazać Ci jak to
+                zrobić!
               </p>
               <p>
                 Prowadzę Akademię bliskich relacji, w której pokazuję jak
@@ -211,7 +211,7 @@ const Index = () => {
               <ShortDivider my={'my-1'} />
             </>
           }
-          image={womanImage}
+          image={womanImage2}
           punctor={<span className="text-purple-500">✔</span>}
           features={[
             'jesteś gotowa wziąć odpowiedzialność za swoją część relacji w związku',
@@ -289,7 +289,7 @@ const Index = () => {
       </Section>
 
       <Section
-        className="py-6"
+        className="pt-6"
         title={
           'Odkryj sprawdzone metody i narzędzia, które od razu wprowadzisz w życie i zmienisz swoją relację na lepsze!'
         }
@@ -309,64 +309,47 @@ const Index = () => {
           ]}
           price="359"
         />
-        <TestimonialsRow
-          testimonials={[
-            {
-              text: '"Dla mnie to był fajny czas, żeby się przyglądać naszej relacji. Czułam się zaproszona ale nie przymuszona i sprawdzałam co mi/nam pasuje. Bardzo super, że zadania były takie różnorodne i też takie proste. Dla mnie to było trudne, że to był czas adwentu i czułam się przeciążona. Chciałabym wrócić do tego w innym czasie i dodać jeszcze jakieś swoje zadania np pograc w gre z młodości wrócić do starych zdjęć, wypisać sobie jakieś romantyczne wspomnienia. Bardzo lubię taką pracę wewnętrzną. Pewnie samej by mi było trudno wymyślić tyle konkretów. Stwierdzam, że nasze małżeństwo jest unikatowe. Ale cieszę się tym co NASZE:)"',
-              name: 'Maja',
-              image: (
-                <Image
-                  alt=""
-                  src={majaImage}
-                  height={60}
-                  width={60}
-                  className="rounded-full"
-                />
-              ),
-            },
-            {
-              text: '"Dzięki Gosia za twoją pracę 🙂 to zadziwiające, jak dużo można zmienić za pomocą trochę lepszego komunikowania czego właściwie się chce. I to nie tylko w małżeństwie ale ogólnie, w każdym środowisku. Super, że szerzysz wiedzę jak to wprowadzać w życie."',
-              name: 'Agnieszka',
-              image: (
-                <Image
-                  alt=""
-                  src={agnieszkaImage}
-                  height={60}
-                  width={60}
-                  className="rounded-full"
-                />
-              ),
-            },
-            {
-              text: '"Super wyzwanie Najbardziej podobało mi się, że właściwie po 24 dniach wchodzi to w nawyk, takie codziennie myślenie "a jak jeszcze mogłabym Mu uprzyjemnić dzień/zrobić coś dla niego" . Plus za różnorodność i w większości przypadków prostotę zadań No i właściwie można sobie do tego później wracać po inspiracje . 24 dzień też był miłym zaskoczeniem."',
-              name: 'Adriana',
-              image: (
-                <Image
-                  alt=""
-                  src={adrianaImage}
-                  height={60}
-                  width={60}
-                  className="rounded-full"
-                />
-              ),
-            },
-            {
-              text: '"Chciałabym Tobie bardzo podziękować za ten kurs! Chociaż sama dużo czytam i staram się, aby moje relacje w małżeństwie były jak najlepsze, to w tym trudnym organizacyjnie dla mnie czasie (ponieważ 2 miesiące temu przyszedł na świat mój drugi synek ) potrzebowałam kogoś, Kto mi o tym przypomni i da mocnego kopa do działania - to byłaś Ty. Kurs przede wszystkim podobał mi się ze względu na konkrety. Bardzo fajnie opisujesz problemy i rozwiązania z jakich możemy skorzystać. Ponadto to, co uwielbiam to Twój głos. Uważam, że masz w sobie mnóstwo ciepła i zrozumienia, dzięki temu to co mówisz - po prostu do mnie dociera. [...] Pomyślałam, że nie jestem z tym sama - to takie dodanie mi otuchy podczas kursu. No i fajnie,że dziś kursy dostępne są w takich formach - mogłam usypiać dwóch synów i jednocześnie słuchać Ciebie!"',
-              name: 'Anna',
-              image: (
-                <Image
-                  alt=""
-                  src={annaImage}
-                  height={60}
-                  width={60}
-                  className="rounded-full"
-                />
-              ),
-            },
-          ]}
-        />
       </Section>
+      <h2 className="max-w-screen-xl text-center mx-auto px-3 text-4xl text-gray-900 font-bold">
+        Opinie o poprzedniej edycji kursu:
+      </h2>
 
+      <TestimonialsRow
+        testimonials={[
+          {
+            text: 'Droga Gosiu, przerobiłam kurs i bardzo mi pomaga. Bardzo Ci dziękuję za wsparcie. Dziękuję, że mogłam do Ciebie napisać. Muszę przyznać, że praca nad tym co ja mogę zrobić daje mi dużo mocy sprawczej i energii. Ogromnym przełomem było dla mnie zdefiniowanie swoich potrzeb- o niektórych nie wiedziałam więc jak mogłam o nie dbać. Zadbanie o siebie w perspektywie nie urodowej ale np przez chwilę modlitwy czy czytania książki jest dla mnie zupełnie nowym odkryciem. Czuję się o niebo lepiej zadbana i zaopiekowana gdy dzięki Tobie sobie to zdefiniowałam i poukładałam. Wiesz, że gdy wypisałam sobie cele większość zależy ode mnie i od mojego działania. Wczoraj pierwszy raz od dłuższego czasu żartowałam z mężem. A wystarczyło tylko zapisać to w celach. Temat granic jest dla mnie bardzo istotny i od jakiegoś czasu nad nim pracuję- dla mnie bardzo ciekawe było to by zweryfikować które oczekiwania i wymagania są moje a które nabyłam w czasie dorastania. To prawda, że moja przyszłość zależy od moich działań widzę to. [...] Bardzo jestem wdzięczna za to że przygotowałaś ten kurs.',
+            name: 'Klaudia',
+          },
+          {
+            text: 'Uczestniczyłam w kursie bo zależy mi na budowaniu bliskich i trwałych relacji. Wiele rzeczy już wiem ale na kursie udało mi się uporządkować podstawy i zastanowić się na czym ja właściwie buduje swoje relacje. Kurs dawał do tego odpowiednie narzędzia i przede wszystkim opierał się na własnej pracy z myślami. Do każdego tematu były dołączone pytania i zadania, które pozwalały zastanowić się jak te treści wyglądają u mnie, jak mogę wprowadzić je w życie. To był też fajny czas w którym mogłam skupić się trochę na tym co przeżywam. Każdego dnia można było podzielić się swoimi przemyśleniami na grupie na Facebooku, to również było budujące i motywujące: zobaczyć że inni też mają trudności albo jak je przezwyciężają, że nie jesteśmy sami w tym co trudne. Kurs był przygotowany bardzo dobrze pod względem merytorycznym! Był też przygotowany bardzo pomysłowo i w taki sposób były poukładane i rozłożone treści, że nie czułam się przytłoczona tylko z ciekawością czekałam na kolejne lekcje. Jestem bardzo zadowolona i serdecznie polecam :)',
+            name: 'Kasia',
+          },
+          {
+            text: 'Kurs zbudowany bardzo konkretnie i bez lania wody. Pozwolił mi przystopować na chwilę i spojrzeć na swój związek z szerszej perspektywy. Zrozumiałam jak wiele rzeczy jeszcze jest do naprawy i jak dużo zależne jest ode mnie samej. Pomógł mi spojrzeć na męża łagodniejszym okiem. Świetne narzędzie do analizy relacji, które w dodatku jest tak skonstruowane, że na pewno będę do niego wracać.',
+            name: 'Adriana',
+          },
+          {
+            text: "Kurs Gosi to był konkretny motywator do działania i przemyśleń dotyczących nie tylko relacji z partnerem, ale też ze samym sobą. Świetnym narzędziem jest workbook, który podsumowuje każdy dzień i pomaga jeszcze więcej wyciągnąć z kursu aniżeli samo słuchanie. Poza tym i do kursu i do workbook'a można wrócić po czasie i zobaczyć jakie postępy się zrobiło. Do tego przestrzeń w grupie, gdzie można dzielić się swoimi refleksjami z innymi, różnymi stażami kobietami, jest bardzo inspirująca i skłaniająca do przemyśleń. Dziękuję za ten czas.",
+            name: 'Maria',
+          },
+          {
+            text: 'Jestem bardzo wdzięczna, że wzięłam udział w kursie organizowanym przez Gosię. Wiedza, którą przerobiłyśmy na kursie pomaga ułożyć sobie w głowie wiele spraw, nie tylko jeśli chodzi o związek, ale przede wszystkim pomaga uświadomić, że jeśli same zadbamy o siebie, zmienimy szkodliwe myślenie o swoim Mężu, już samym tym możemy wiele zmienić w swoim związku. Mnóstwo trafnych wskazówek, świetny workbook, dodatkowy atut to możliwość dzielenia się przemyśleniami na grupie  mnie kurs bardzo pomógł  na pewno będę wrócę do kursu za jakiś czas. Dzięki Gosia :)',
+            name: 'Julia',
+          },
+          {
+            text: 'Dzięki za ten kurs, Gosia! Bardzo podobało mi się podzielenie go na dwa moduły, pierwszy bardziej nastawiony na obserwacje, a drugi na działanie. Myślę, że to wartościowe źródło wiedzy przedstawione bardzo przystępnie i zwięźle:) Dodatkowym atutem jest to, że można do niego wracać wielokrotnie, ponieważ dynamika związku stale się zmienia. Bardzo motywującym narzędziem był workbook, który skłania do spisania konkretnych myśli, dzięki czemu łatwiej sobie wszystko poukładać w głowie. Zdecydowanie polecam kobietom w każdym etapie związku!',
+            name: 'Karolina',
+          },
+          {
+            text: 'Ten kurs to był dla mnie jak złamanie źle zrośniętej kości. Miałam w sobie bunt i brak zrozumienia dla wiele spraw, co utrudniło mi udzielanie się w grupie. Jednak mimo tego i moich trudności udało mi się wyciągnąć z niego coś, co myślałam, że moim przypadku jest niemożliwe. Poza moimi błędami dostrzegłam, że po prostu kocham mojego męża, wierzę w to, że on mnie kocha i nawet gdy w mojej głowie rodzą się czarne scenariusze rozwodu słyszę (przysięgam, że wymawiane ze spokojem jaki słyszałam w Gosi głosie podczas kursu) „jesteśmy w tym razem”, „kocham go i chcę dla niego dobrze”, „on mnie kocha i chce dla mnie dobrze”. Dziękuję za to  Mam zamiar wrócić, bo wiem, że wiele tematów muszę rozkminić jeszcze raz, albo nawet od zera i trochę więcej czasu i uwagi im poświecić. Jestem bardzo wdzięczna, że jest taka opcja.',
+            name: 'Dorota',
+          },
+          {
+            text: 'Miałam wątpliwości czy zapisać się na kurs, ponieważ przeszłam już terapię dla par razem z mężem i każdy z nas przeszedł terapię indywidualną, więc miałam obawy czy dowiem się na kursie czegoś nowego, czy ten kurs w ogóle jest dla mnie. Bardzo się cieszę, że do niego dołączyłam! Pomimo, że nie dowiedziałam się na kursie żadnych całkiem nowych rzeczy i nie dokonałam rewolucyjnego odkrycia, jeśli chodzi o moją relację z mężem, to bardzo dobrze było przypomnieć sobie podstawy, które już kiedyś przerabialiśmy na terapii dla par, a o których w codziennym życiu łatwo zapomnieć oraz spojrzeć na niektóre sytuacje z innej perspektywy. Doceniłam bardzo jak dużą pracę wykonaliśmy z mężem do tej pory, wyznaczyłam sobie nowe cele i wiem nad czym chciałabym pracować w najbliższym czasie. Workbook jest do tego doskonałym narzędziem i chciałabym do niego wracać co jakiś czas.',
+            name: 'Martyna',
+          },
+        ]}
+      />
       {/* <Footer /> */}
 
       <Section className="py-6 bg-gray-100">
