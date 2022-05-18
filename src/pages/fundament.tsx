@@ -297,6 +297,7 @@ const Index = () => {
         <PricingCardRow
           className="mx-auto mb-8"
           features={[
+            'Start kursu 30.05.2022',
             '8 nagrań video podzielonych na 2 moduły kursowe',
             'Dwugodzinne warsztaty',
             '2 spotkania na żywo podsumowujące moduły i sprawdzające postępy',
@@ -307,7 +308,7 @@ const Index = () => {
             'Bezterminowy dostęp do zamkniętej grupy na facebooku i moje merytoryczne wsparcie przez cały okres trwania kursu',
             'Dostęp do materiałów na dwa lata',
           ]}
-          price="359"
+          price="379"
         />
       </Section>
       <h2 className="max-w-screen-xl text-center mx-auto px-3 text-4xl text-gray-900 font-bold">
