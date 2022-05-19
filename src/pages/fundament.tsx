@@ -62,7 +62,7 @@ const Index = () => {
             <div className="flex justify-center mb-8 md:mb-10 md:mt-3">
               <FundamentButton />
             </div>
-            <p className="text-justify italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)]">
+            <p className="italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)]">
               Zacznij w pełni świadomie budować swoją relację w związku i
               wyznacz drogę, którą naprawdę Ty chcesz podążać. Dzięki 3
               miesięcznej pracy ze mną oraz w małej grupie kobiet, wyznaczysz

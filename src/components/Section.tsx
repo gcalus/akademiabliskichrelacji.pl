@@ -22,7 +22,7 @@ const Section = (props: ISectionProps) => (
           <div
             className={`${
               props.title && 'mt-4'
-            } text-xl text-justify max-w-prose mx-auto`}
+            } text-xl text-left max-w-prose mx-auto`}
           >
             {props.description}
           </div>

@@ -8,11 +8,11 @@ type ITestimonialsRowProps = {
 
 const TestimonialsRow = ({ testimonials }: ITestimonialsRowProps) => {
   return (
-    <div className="max-w-screen-lg  mx-auto relative overflow-x-hidden shadow-inner">
-      <div className="inset-container flex gap-8 overflow-x-scroll p-6 mb-2">
+    <div className="max-w-screen-lg mx-auto relative overflow-x-hidden shadow-inner">
+      <div className="inset-container flex gap-4 sm:gap-8 overflow-x-scroll p-4 sm:p-6 mb-2">
         {testimonials.map((t, i) => (
           <div
-            className="w-4/5 sm:max-w-lg bg-gray-50 rounded-3xl p-10 pt-3 shadow-lg shrink-0"
+            className="w-5/6 sm:max-w-lg bg-gray-50 rounded-3xl p-4 sm:p-10 pt-3 shadow-lg shrink-0"
             key={i}
           >
             <div
