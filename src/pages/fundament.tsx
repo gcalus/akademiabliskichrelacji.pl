@@ -9,6 +9,7 @@ import image1 from '../../public/assets/images/kurs1.png';
 import logo from '../../public/assets/images/logo.png';
 import questionsImage2 from '../../public/assets/images/question4.png';
 import questionsImage from '../../public/assets/images/questions2.png';
+import { Accordion } from '../components/Accordion';
 import { BigFeaturesRow } from '../components/BigFeaturesRow';
 import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
 import { FeaturesRow } from '../components/FeaturesRow';
@@ -224,7 +225,7 @@ const Index = () => {
       </Section>
 
       <Section
-        className="pt-6"
+        className="pt-6 space-y-10"
         title={
           <p className="max-w-prose">
             Możesz dołączyć do kursu niezależnie od tego jaki masz staż w swoim
@@ -261,6 +262,140 @@ const Index = () => {
               image: <UsersIcon />,
               feature:
                 'Po przerobieniu materiałów kursowych będziesz mogła umówić się ze mną na 45-minutową indywidualną konsultację. Jeśli uznasz, że potrzebujesz lub chciałabyś spotkać się jeszcze raz, to umówimy się na kolejną sesję. Na konsultacjach będziesz mogła porozmawiać o tym, czym nie mogłaś lub nie chciałaś dzielić się z grupą. Wesprę Cię również w razie kryzysu - wywołanego przez czynniki zewnętrzne lub takim, który może się zdarzyć przez głębszą analizę przeszłości związanym z kursem.',
+            },
+          ]}
+        />
+        <Accordion
+          accordions={[
+            {
+              title: 'Zobacz harmonogram i tematy spotkań w programie',
+              description: (
+                <div className="space-y-4">
+                  <p className="text-slate-400">
+                    Na czerwono zaznaczono przybliżony harmonogram sesji.
+                    Poszczególne terminy mogą ulec przesunięciom za zgodą
+                    wszystkich uczestniczek.
+                  </p>
+                  <div className="text-sm space-y-1">
+                    <p className="text-lg">
+                      <span className="text-red-400">30.05.2022</span> -
+                      <span className="font-semibold"> Wprowadzenie</span>
+                    </p>
+                    <p className="text-base">2-godzinny grupowy warsztat. </p>
+                    <p>- Zapoznasz się z innymi uczestniczkami.</p>
+                    <p>
+                      - Odsłuchasz i będziesz mogła wziąć udział w dyskusji na
+                      temat części merytorycznej warsztatu &ldquo;5 błędów
+                      popełnianych w relacjach związku + jak można je
+                      naprawić&ldquo;
+                    </p>
+                    <p>
+                      - Określisz swoje cele, które chcesz osiągnąć w programie
+                      i rzeczy nad którymi chcesz pracować.
+                    </p>
+                  </div>
+
+                  <div className="text-sm space-y-1">
+                    <p className="text-lg">
+                      <span className="text-red-400">31.05-3.06</span> -{' '}
+                      <span className="font-semibold">
+                        {' '}
+                        1 Moduł “Zobacz gdzie teraz jesteś”
+                      </span>
+                    </p>
+                    <p className="text-base">
+                      Moduł składa się z czterech lekcji w formie nagrań na
+                      platformie kursowej.
+                    </p>
+                    <p>- Wróć do początku</p>
+                    <p>- Zajrzyj w głąb siebie</p>
+                    <p>- Naucz się dbać o siebie i wyrażać wdzięczność</p>
+                    <p>- Przyjrzyj się temu jak teraz wygląda Twój związek </p>
+                    <p>
+                      W tym module dogłębnie przeskanujesz swoją relację z
+                      partnerem co jest niezbędne do dalszej świadomej pracy.
+                      Nauczy się wzmacniać relację z samą sobą i skonfrontujesz
+                      się ze swoimi przekonaniami na temat dbania o siebie.
+                      Dowiesz się co robić, żeby zaspokajać swoje potrzeby i jak
+                      robić to efektywnie. Przyjrzysz się dokładnie z jakiego
+                      punktu teraz startujesz i dostrzeżesz obszary do zmiany.
+                    </p>
+                  </div>
+
+                  <div className="text-sm space-y-1">
+                    <p className="text-lg">
+                      <span className="text-red-400">6.06.2022</span> -
+                      <span className="font-semibold">
+                        {' '}
+                        Spotkanie podsumowujące pierwszy moduł kursu.
+                      </span>
+                    </p>
+                  </div>
+
+                  <div className="text-sm space-y-1">
+                    <p className="text-lg">
+                      <span className="text-red-400">7-10.06.2022</span> -{' '}
+                      <span className="font-semibold">
+                        {' '}
+                        2 moduł “Zacznij działać”
+                      </span>
+                    </p>
+                    <p className="text-base">
+                      Moduł składa się z czterech lekcji w formie nagrań na
+                      platformie kursowej.
+                    </p>
+                    <p>- Ustal swój cel</p>
+                    <p>- Ustal swoje normy i granice</p>
+                    <p>- Pozbądź się szkodliwych wymagań</p>
+                    <p>
+                      - Odzyskaj swoją niezależność, nie odrzucając
+                      współzależności
+                    </p>
+                    <p>
+                      W tym module przejdziesz do konkretnego działania i zmian
+                      swoich przekonań i zachowań, które szkodzą Twojej relacji.
+                      Ustalisz cele, normy i granice, dzięki czemu odzyskasz
+                      sprawczość w budowaniu swojej relacji. Dowiesz się,
+                      dlaczego warto odrzucić niektóre wymagania i zastąpić je
+                      normami. Przyjrzysz się temu jak działają Twoje granice i
+                      uszczelnisz je w najbardziej kruchych miejscach. Zyskasz
+                      również motywację do tego, żeby brać odpowiedzialność za
+                      swoją część w relacji.
+                    </p>
+                  </div>
+
+                  <div className="text-sm">
+                    <p className="text-lg">
+                      <span className="text-red-400">13.06.2022</span> -
+                      <span className="font-semibold">
+                        {' '}
+                        Spotkanie podsumowujące drugi moduł kursu.
+                      </span>
+                    </p>
+                    <p className="text-base">
+                      Od 13.06 do 13.08 będzie można umówić się na konsultację
+                      1:1 ze mną. Po pierwszej konsultacji zdecydujemy wspólnie,
+                      czy warto jest się spotkać drugi raz.
+                    </p>
+                  </div>
+
+                  <div className="text-sm">
+                    <p className="text-lg">
+                      <span className="text-red-400">15.08.2022</span> -
+                      <span className="font-semibold">
+                        {' '}
+                        Spotkanie podsumowujące.
+                      </span>
+                    </p>
+                    <p className="text-base">
+                      Spotkanie na zoomie, podczas którego sprawdzimy czy udaje
+                      się realizować cele. Dostaniesz kolejną dawkę motywacji i
+                      ustalisz plan działania na dalszą drogę po zakończeniu
+                      kursu.
+                    </p>
+                  </div>
+                </div>
+              ),
             },
           ]}
         />
