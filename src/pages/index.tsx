@@ -27,7 +27,10 @@ const Index = () => {
       <StickyBackground>
         <NavbarTwoColumns />
         <div className="text-center drop-shadow-md py-20 px-3">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-title font-bold whitespace-pre-line leading-hero">
+          <h1
+            className="text-3xl
+          sm:text-5xl md:text-6xl font-title font-bold whitespace-pre-line leading-hero"
+          >
             {translations.index.Hero.title}
           </h1>
           <div className="text-2xl sm:text-2xl md:text-3xl mt-4 mb-16">
