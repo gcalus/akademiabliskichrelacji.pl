@@ -5,7 +5,6 @@ import ebookImage from '../../public/assets/images/ebook.png';
 import kursImage from '../../public/assets/images/kurs.png';
 import listyImage from '../../public/assets/images/listy.png';
 import { Button } from '../components/Button';
-import { CTABanner } from '../components/CTABanner';
 import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
 import { FooterCentered } from '../components/FooterCentered';
 import { Meta } from '../components/Meta';
@@ -56,12 +55,29 @@ const Index = () => {
           description={translations.index.About2.subtitle}
           image={kursImage}
           reverse
-        />
+        >
+          <div className="whitespace-nowrap mt-3">
+            <Link href="https://sklep.gosiacalus.pl/kursy-i-wyzwania/">
+              <a>
+                <Button variant="outlined">Przejdź do sklepu</Button>
+              </a>
+            </Link>
+          </div>
+        </DescriptionWithImageRow>
+
         <DescriptionWithImageRow
           title={translations.index.About3.title}
           description={translations.index.About3.subtitle}
           image={listyImage}
-        />
+        >
+          <div className="whitespace-nowrap mt-3">
+            <Link href="https://gosiacalus.pl/newsletter/">
+              <a>
+                <Button variant="outlined">Zapisz się na newsletter</Button>
+              </a>
+            </Link>
+          </div>
+        </DescriptionWithImageRow>
         <DescriptionWithImageRow
           title={translations.index.About4.title}
           description={translations.index.About4.subtitle}
@@ -69,7 +85,7 @@ const Index = () => {
           reverse
         >
           <div className="whitespace-nowrap mt-3">
-            <Link href="https://gosiacalus.pl/ebook">
+            <Link href="https://sklep.gosiacalus.pl/produkt/ebook-jak-dbac-o-relacje-w-rodzinie-zeby-wszyscy-domownicy-czuli-sie-dobrze/">
               <a>
                 <Button variant="outlined">
                   {translations.index.About4.cta}
@@ -90,7 +106,7 @@ const Index = () => {
 
       {/* <Banner /> */}
 
-      <Section>
+      {/* <Section>
         <CTABanner
           title={translations.index.CTABanner.title}
           subtitle={translations.index.CTABanner.subtitle}
@@ -102,7 +118,7 @@ const Index = () => {
             </Link>
           }
         />
-      </Section>
+      </Section> */}
 
       {/* <Footer /> */}
 
