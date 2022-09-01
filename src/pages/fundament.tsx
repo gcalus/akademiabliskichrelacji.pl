@@ -4,9 +4,9 @@ import Link from 'next/link';
 import image3 from '../../public/assets/images/1.jpg';
 import womanImage2 from '../../public/assets/images/certificate-woman.png';
 import womanImage from '../../public/assets/images/creative-woman.png';
+import logo from '../../public/assets/images/cropped-logo.png';
 import ideaImage from '../../public/assets/images/idea.png';
 import image1 from '../../public/assets/images/kurs1.png';
-import logo from '../../public/assets/images/logo.png';
 import questionsImage2 from '../../public/assets/images/question4.png';
 import questionsImage from '../../public/assets/images/questions2.png';
 import { Accordion } from '../components/Accordion';
@@ -36,14 +36,17 @@ const Index = () => {
 
       <StickyBackground backgroundHeightSpacing={{ h: 'h-96', top: 'top-96' }}>
         <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md h-full flex flex-col">
-          <nav className="flex gap-4 justify-between items-center font-bold text-2xl">
+          <nav className="flex gap-4 justify-end items-center font-bold text-2xl">
             <Link href="/">
-              <a>
-                {<Image src={logo} alt={'logo'} width={100} height={100} />}
+              <a className="rounded-md shadow-white shadow h-[100px]">
+                <Image
+                  src={logo}
+                  alt={'logo'}
+                  height={100}
+                  className="rounded-md"
+                />
               </a>
             </Link>
-
-            {'Akademia bliskich relacji'}
           </nav>
           <div className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero text-center my-auto">
             <h1>{'Zbuduj solidny fundament relacji'}</h1>
@@ -63,14 +66,20 @@ const Index = () => {
             <div className="flex justify-center mb-8 md:mb-10 md:mt-3">
               <FundamentButton />
             </div>
-            <p className="italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)]">
-              Zacznij w pełni świadomie budować swoją relację w związku i
-              wyznacz drogę, którą naprawdę Ty chcesz podążać. Dzięki 3
-              miesięcznej pracy ze mną oraz w małej grupie kobiet, wyznaczysz
-              realne cele, zadbasz o swoje granice, ustalisz normy, którymi
-              chcesz żyć na co dzień. Otrzymasz wsparcie i motywację, które
-              pomogą Ci ruszyć z miejsca!
-            </p>
+            <div className="italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)] space-y-2">
+              <p>
+                Zacznij w pełni świadomie budować relację w swoim związku i
+                wyznacz drogę, którą naprawdę chcesz podążać. Wyznacz realne
+                cele, zadbaj o swoje granice, ustal normy, którymi chcesz żyć na
+                co dzień.
+              </p>
+              <p>
+                Dzięki udziałowi w programie otrzymasz wsparcie i motywację,
+                które pomogą Ci ruszyć z miejsca. Dostaniesz sprawdzone metody i
+                narzędzia, które od razu wprowadzisz w życie i zmienisz swoją
+                relację na lepsze!
+              </p>
+            </div>
           </div>
         }
       >
@@ -104,12 +113,13 @@ const Index = () => {
             </span>
           }
           features={[
+            'Nie potrafisz zapanować nad swoimi emocjami? Krzyczysz na bliskich i potem tego żałujesz?',
             'Masz poczucie, że kiedyś lepiej dogadywałaś się z partnerem, było między Wami więcej bliskości i nie kłóciliście się o mało ważne rzeczy?',
-            'Nie wiesz jak zareagować, kiedy Twoje granice są przekraczane?',
-            'Czujesz, że pracujesz nad sobą i próbujesz się zmieniać, ale cały czas stoisz w miejscu i nie wiesz w którym iść kierunku?',
-            'Chciałabyś wziąć życie w swoje ręce i zacząć żyć wykorzystując w pełni swój potencjał jako kobieta i jako partnerka?',
-            'Jesteś zmęczona ciągłym niedogadywaniem się z partnerem i nierównościami w związku?',
-            'Związek to dla Ciebie ważny obszar w życiu, ale nie czujesz się w nim tak spełniona jakbyś chciała?',
+            'Nie wiesz jak skutecznie zareagować, kiedy partner na Ciebie krzyczy?',
+            'Czujesz, że pracujesz nad sobą i próbujesz się zmieniać, ale nie przynosi to efektu i nie wiesz w którym iść kierunku?',
+            'W emocjach wypowiadasz słowa, których później żałujesz?',
+            'Zależy Ci na dobrej relacji z partnerem?',
+            'Chciałabyś zacząć żyć wykorzystując w pełni swój potencjał jako kobieta i jako partnerka?',
           ]}
         />
       </Section>
@@ -117,7 +127,7 @@ const Index = () => {
       <Section
         className="pt-6"
         title={
-          'Jeśli tak, to program mentoringowy "zbuduj solidny fundament relacji" pomoże Ci ruszyć z miejsca!'
+          'Jeśli tak, to program mentoringowy "zbuduj solidny fundament relacji" pomoże Ci ruszyć z miejsca.'
         }
         description={
           'Dostaniesz niezbędną wiedzę do tego, żebyś mogła być szczęśliwa i spełniona w związku. Nauczysz się dbać o siebie i dostaniesz konkretne wskazówki i narzędzia jak dbać o swoje relacje!'
@@ -127,7 +137,7 @@ const Index = () => {
           reverse
           title={
             <>
-              Co da ci ten kurs?
+              Co da ci ten program?
               <ShortDivider my={'my-1'} />
             </>
           }
@@ -143,14 +153,15 @@ const Index = () => {
             </span>
           }
           features={[
+            'Dowiesz się jak zmienić szkodliwe przekonania o budowaniu relacji w związku i schematy, które sprawiają, że stoisz w miejscu.',
             'Ustalisz swoje cele w relacji i dzięki nim będziesz mogła rozwijać się w kierunku w którym pragniesz! Niezależnie od tego, czy druga osoba w związku jest teraz gotowa na zmiany, czy nie.',
             'Odkryjesz swoje granice i nauczysz się co robić w sytuacjach, gdy ktoś je narusza.',
             'Nauczysz się dbać o siebie, swoje potrzeby i pragnienia! Dzięki temu będziesz miała więcej zasobów na dbanie o swoje relacje.',
-            'Zobaczysz, co zrobić żeby zwiększyć swój poziom zadowolenia z życia i relacji.',
-            'Dowiesz się, jakie zachowania i myśli szkodzą Twojej relacji i będziesz mogła pozbyć się ich ze swojego życia.',
-            'Odzyskasz swoją niezależność i zobaczysz, że to wcale nie oznacza życia "obok siebie". Zobaczysz, że możesz być niezależna od partnera i jednocześnie żyć z nim w bliskiej relacji.',
+            'Zobaczysz co zrobić, żeby zwiększyć swój poziom zadowolenia z życia i relacji.',
+            'Dowiesz się jakie zachowania i myśli szkodzą Twojej relacji i będziesz mogła pozbyć się ich ze swojego życia.',
+            'Nauczysz się wyznaczać priorytety w taki sposób, żeby mieć czas na najważniejsze dla Ciebie rzeczy.',
+            'Odzyskasz swoją niezależność i zobaczysz, że to wcale nie oznacza życia z partnerem "obok siebie". Zobaczysz, że możesz być niezależna od partnera i jednocześnie żyć z nim w bliskiej relacji.',
             'Spojrzysz na swój związek z innej perspektywy. Dzięki dokładnemu zdaniu sobie sprawy z historii Twojej relacji, zmian które zaszły i tego w jakim punkcie się znajdujecie, będziesz mogła ustalić najlepszą strategię pracy nad sobą.',
-            'Odzyskasz swoją sprawczość!',
           ]}
         />
       </Section>
@@ -161,7 +172,7 @@ const Index = () => {
           description={
             <div className="space-y-4">
               <p>
-                Nazywam się Gosia Całus. 9 lat temu weszłam w stały związek,
+                Nazywam się Gosia Całus. 10 lat temu weszłam w stały związek,
                 który szybko okazał się być daleki od moich oczekiwań. Swoją
                 satysfakcję i szczęście opierałam na szkodliwych przekonaniach,
                 które wydawały mi się wtedy być jedyną słuszną drogą. Kłótnie,
@@ -187,9 +198,13 @@ const Index = () => {
                 zrozumieniu siebie samego i pokazuję jak bardzo codzienne
                 relacje i komunikaty wpływają na jakość życia. Stworzyłam
                 autorskie kursy i wyzwania rozwojowe o budowaniu dobrych relacji
-                i rozwiązywaniu konfliktów, w których wzięło udział już prawie
-                1000 osób! Jestem w trakcie certyfikacji na konsultanta
-                kryzysowego, czyli osoby która udziela pierwszej pomocy
+                i rozwiązywaniu konfliktów, w których wzięło udział już ponad
+                1000 osób! Mam na swoim koncie dziesiątki godzin konsultacji z
+                zadowolonymi klientkami.
+              </p>
+              <p>
+                Jestem muzykoterapeutką oraz certyfikowanym konsultantem
+                kryzysowym, czyli osobą która udziela pierwszej pomocy
                 psychologicznej ludziom w kryzysie.
               </p>
             </div>
@@ -217,6 +232,7 @@ const Index = () => {
           features={[
             'jesteś gotowa wziąć odpowiedzialność za swoją część relacji w związku',
             'chcesz poprawić komfort swojego życia i lepiej czuć się w swoim związku',
+            'pragniesz odzyskać sprawczość w swoim życiu i związku',
             'próbujesz coś zmienić w swojej relacji, ale nie za bardzo wiesz za co się zabrać',
             'masz dosyć niektórych zachowań partnera, ale nie wiesz jak sprawić żeby przestał to robić',
             'chcesz zadbać nie tylko o relacje, ale też o samą siebie!',
@@ -243,42 +259,50 @@ const Index = () => {
         }
       >
         <BigFeaturesRow
-          title="Jak wygląda praca w kursie?"
+          title="Co otrzymasz dołączając do programu?"
           features={[
             {
-              title: 'Praca indywidualna',
+              title: 'Kurs “Zbuduj solidny fundament relacji” + workbook',
               image: <UserIcon />,
               feature:
-                'Otrzymasz dwuletni dostęp do platformy kursowej na której znajdziesz nagrania video do każdego modułu kursu (8 video). Do kursu dołączony jest obszerny 70-stronnicowy workbook, w którym znajdziesz ćwiczenia do każdej lekcji.',
+                'Otrzymasz dostęp do platformy kursowej na której znajdziesz nagrania video do każdego  z dwóch modułów kursu (łącznie 8 video). Do kursu dołączony jest obszerny 70-stronicowy workbook, w którym znajdziesz ćwiczenia do każdej lekcji.',
             },
             {
-              title: 'Praca w grupie',
+              title:
+                'Ebook “Jak dbać o relacje w rodzinie, żeby wszyscy domownicy czuli się dobrze?”',
               image: <GroupIcon />,
               feature:
-                'Dostaniesz dostęp do zamkniętej grupy na facebooku, w której będą tylko uczestniczki kursu. Dodatkowo wszystkie spotkania na zoomie będą odbywać się w tej samej grupie kobiet, dzięki czemu uda nam się nawiązać bliższy kontakt. Grupa jest po to, żeby wzajemnie się wspierać i motywować!',
+                'W ebooku omawiam najważniejsze relacje, które budujesz w swoim życiu. Zajmiemy się Twoją relację ze sobą, z mężem/partnerem i dziećmi (jeśli je masz). Dzięki odpowiednim narzędziom zawartym w ebooku uzyskasz wgląd w swoje relacje i niezaspokojone potrzeby oraz znajdziesz strategie na ich zaspokojenie. Cały ebook naładowany jest wiedzą, konkretami i przykładami.',
             },
             {
-              title: 'Praca 1:1 ze mną',
+              title: 'Spotkania 1:1 20-minutowe',
               image: <UsersIcon />,
               feature:
-                'Po przerobieniu materiałów kursowych będziesz mogła umówić się ze mną na 45-minutową indywidualną konsultację. Jeśli uznasz, że potrzebujesz lub chciałabyś spotkać się jeszcze raz, to umówimy się na kolejną sesję. Na konsultacjach będziesz mogła porozmawiać o tym, czym nie mogłaś lub nie chciałaś dzielić się z grupą. Wesprę Cię również w razie kryzysu - wywołanego przez czynniki zewnętrzne lub takim, który może się zdarzyć przez głębszą analizę przeszłości związanym z kursem.',
+                'Krótkie spotkania podczas których monitorujemy postępy pracy i omawiamy napotkane trudności. Z poprzedniej edycji programu wiem, że spotkania są bardzo motywujące do tego, żeby przerobić cały materiał kursowy i nie odkładać tego na później. ',
+            },
+            {
+              title: 'Konsultacje 1:1 45-minutowe',
+              image: <UsersIcon />,
+              feature:
+                'Podczas konsultacji zajmujemy się pracą nad tematami (przekonaniami, omawianiem schematów, itp.), które sprawiają klientce najwięcej trudności. Możemy pogłębiać tematy zawarte w kursie lub zająć się czymś innym, np. komunikacją. Zaproponuję temat, który wyda mi się najbardziej odpowiedni i wspólnie zdecydujemy co będziemy omawiać. Podczas konsultacji pracuję metodami mentoringowymi i warsztatowymi. ',
+            },
+            {
+              title: 'Dodatkowe materiały',
+              image: <UsersIcon />,
+              feature:
+                'W zależności od wybranego wariantu programu otrzymasz dostęp do dwóch sesji Q&A (z poprzednich edycji kursu) i dwóch webinarów: “Pięć błędów popełnianych w budowaniu relacji w związku” i “Granice w relacjach”. ',
             },
           ]}
         />
         <Accordion
           accordions={[
             {
-              title: 'Zobacz harmonogram i tematy spotkań w programie',
+              title:
+                'Z czego składa się kurs “Zbuduj solidny fundament relacji”?',
               description: (
                 <div className="space-y-4">
-                  <p className="text-slate-400">
-                    Na czerwono zaznaczono przybliżony harmonogram sesji.
-                    Poszczególne terminy mogą ulec przesunięciom za zgodą
-                    wszystkich uczestniczek.
-                  </p>
                   <div className="text-sm space-y-1">
                     <p className="text-lg">
-                      <span className="text-red-400">30.05.2022</span> -
                       <span className="font-semibold"> Wprowadzenie</span>
                     </p>
                     <p className="text-base">2-godzinny grupowy warsztat. </p>
@@ -297,9 +321,7 @@ const Index = () => {
 
                   <div className="text-sm space-y-1">
                     <p className="text-lg">
-                      <span className="text-red-400">31.05-3.06</span> -{' '}
                       <span className="font-semibold">
-                        {' '}
                         1 Moduł “Zobacz gdzie teraz jesteś”
                       </span>
                     </p>
@@ -324,9 +346,7 @@ const Index = () => {
 
                   <div className="text-sm space-y-1">
                     <p className="text-lg">
-                      <span className="text-red-400">6.06.2022</span> -
                       <span className="font-semibold">
-                        {' '}
                         Spotkanie podsumowujące pierwszy moduł kursu.
                       </span>
                     </p>
@@ -334,9 +354,7 @@ const Index = () => {
 
                   <div className="text-sm space-y-1">
                     <p className="text-lg">
-                      <span className="text-red-400">7-10.06.2022</span> -{' '}
                       <span className="font-semibold">
-                        {' '}
                         2 moduł “Zacznij działać”
                       </span>
                     </p>
@@ -366,24 +384,20 @@ const Index = () => {
 
                   <div className="text-sm">
                     <p className="text-lg">
-                      <span className="text-red-400">13.06.2022</span> -
                       <span className="font-semibold">
-                        {' '}
                         Spotkanie podsumowujące drugi moduł kursu.
                       </span>
                     </p>
                     <p className="text-base">
-                      Od 13.06 do 13.08 będzie można umówić się na konsultację
-                      1:1 ze mną. Po pierwszej konsultacji zdecydujemy wspólnie,
-                      czy warto jest się spotkać drugi raz.
+                      będzie można umówić się na konsultację 1:1 ze mną. Po
+                      pierwszej konsultacji zdecydujemy wspólnie, czy warto jest
+                      się spotkać drugi raz.
                     </p>
                   </div>
 
                   <div className="text-sm">
                     <p className="text-lg">
-                      <span className="text-red-400">15.08.2022</span> -
                       <span className="font-semibold">
-                        {' '}
                         Spotkanie podsumowujące.
                       </span>
                     </p>
