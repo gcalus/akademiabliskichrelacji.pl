@@ -1,18 +1,18 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import oMnieImage from '../../public/assets/images/1.jpg';
-import ebookImage from '../../public/assets/images/ebook.png';
-import kursImage from '../../public/assets/images/kurs.png';
-import listyImage from '../../public/assets/images/listy.png';
-import { Button } from '../components/Button';
-import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
-import { FooterCentered } from '../components/FooterCentered';
-import { Meta } from '../components/Meta';
-import { NavbarTwoColumns } from '../components/NavbarTwoColumns';
-import { Section } from '../components/Section';
-import { StickyBackground } from '../components/StickyBackground';
-import { AppConfig } from '../utils/AppConfig';
-import translationsPl from '../utils/index-translations-pl.json';
+import oMnieImage from "../../public/assets/images/1.jpg";
+import ebookImage from "../../public/assets/images/ebook.png";
+import kursImage from "../../public/assets/images/kurs.png";
+import listyImage from "../../public/assets/images/listy.png";
+import { Button } from "../components/Button";
+import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
+import { FooterCentered } from "../components/FooterCentered";
+import { Meta } from "../components/Meta";
+import { NavbarTwoColumns } from "../components/NavbarTwoColumns";
+import { Section } from "../components/Section";
+import { StickyBackground } from "../components/StickyBackground";
+import { AppConfig } from "../utils/AppConfig";
+import translationsPl from "../utils/index-translations-pl.json";
 
 const Index = () => {
   const translations = translationsPl;
@@ -123,7 +123,7 @@ const Index = () => {
       {/* <Footer /> */}
 
       <Section className="py-6 bg-gray-100">
-        <FooterCentered logo={'Śledź nas na social mediach:'}></FooterCentered>
+        <FooterCentered logo={"Śledź nas na social mediach:"}></FooterCentered>
       </Section>
     </>
   );

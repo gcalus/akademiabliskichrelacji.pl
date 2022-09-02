@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 type ISectionProps = {
   title?: string | JSX.Element;
@@ -10,7 +10,7 @@ type ISectionProps = {
 const Section = (props: ISectionProps) => (
   <div
     className={`max-w-screen-xl mx-auto px-3 ${
-      props.className ? props.className : 'py-16'
+      props.className ? props.className : "py-16"
     }`}
   >
     {(props.title || props.description) && (
@@ -21,7 +21,7 @@ const Section = (props: ISectionProps) => (
         {props.description && (
           <div
             className={`${
-              props.title && 'mt-4'
+              props.title && "mt-4"
             } text-xl text-left max-w-prose mx-auto`}
           >
             {props.description}

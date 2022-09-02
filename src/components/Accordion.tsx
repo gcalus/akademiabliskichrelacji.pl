@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 type IAccordionProps = {
   accordions: {
@@ -12,7 +12,7 @@ const Accordion = (props: IAccordionProps) => {
   return (
     <div id="accordion-collapse" data-accordion="collapse">
       {props.accordions.map((item) => (
-        <>
+        <div key={item.title}>
           <h2 id="accordion-collapse-heading-1">
             <button
               type="button"
@@ -41,13 +41,13 @@ const Accordion = (props: IAccordionProps) => {
           <div
             id="accordion-collapse-body-1"
             aria-labelledby="accordion-collapse-heading-1"
-            className={`${extended ? 'block' : 'hidden'}`}
+            className={`${extended ? "block" : "hidden"}`}
           >
             <div className="p-5 border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
               {item.description}
             </div>
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

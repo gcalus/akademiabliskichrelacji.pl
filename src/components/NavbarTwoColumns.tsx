@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
-import logoDefault from '../../public/assets/images/logo.png';
+import logoDefault from "../../public/assets/images/logo.png";
 
 type INavbarProps = {
   logo?: StaticImageData;
@@ -30,7 +30,7 @@ const NavbarTwoColumns = ({
   <header className="flex flex-wrap justify-between items-center px-6 py-6 drop-shadow-md max-w-screen-xl mx-auto">
     <div className="w-36">
       <Link href="/">
-        <a>{<Image src={logo} alt={'logo'} />}</a>
+        <a>{<Image src={logo} alt={"logo"} />}</a>
       </Link>
     </div>
 

@@ -1,21 +1,21 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import image3 from '../../public/assets/images/1.jpg';
-import image1 from '../../public/assets/images/kurs1.png';
-import image2 from '../../public/assets/images/kurs2.png';
-import image4 from '../../public/assets/images/kurs3.png';
-import logo from '../../public/assets/images/logo.png';
-import { Button } from '../components/Button';
-import { CTABanner } from '../components/CTABanner';
-import { DescriptionWithImageRow } from '../components/DescriptionWithImageRow';
-import { FeaturesWithImageRow } from '../components/FeaturesWithImageRow';
-import { FooterCentered } from '../components/FooterCentered';
-import { Meta } from '../components/Meta';
-import { Section } from '../components/Section';
-import { StickyBackground } from '../components/StickyBackground';
-import { AppConfig } from '../utils/AppConfig';
-import translationsPl from '../utils/konfliktywzwiazku-translations-pl.json';
+import image3 from "../../public/assets/images/1.jpg";
+import image1 from "../../public/assets/images/kurs1.png";
+import image2 from "../../public/assets/images/kurs2.png";
+import image4 from "../../public/assets/images/kurs3.png";
+import logo from "../../public/assets/images/logo.png";
+import { Button } from "../components/Button";
+import { CTABanner } from "../components/CTABanner";
+import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
+import { FeaturesWithImageRow } from "../components/FeaturesWithImageRow";
+import { FooterCentered } from "../components/FooterCentered";
+import { Meta } from "../components/Meta";
+import { Section } from "../components/Section";
+import { StickyBackground } from "../components/StickyBackground";
+import { AppConfig } from "../utils/AppConfig";
+import translationsPl from "../utils/konfliktywzwiazku-translations-pl.json";
 
 const Index = () => {
   const translations = translationsPl;
@@ -26,12 +26,12 @@ const Index = () => {
 
       {/* <Hero /> */}
 
-      <StickyBackground backgroundHeightSpacing={{ h: 'h-96', top: 'top-96' }}>
+      <StickyBackground backgroundHeightSpacing={{ h: "h-96", top: "top-96" }}>
         <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md h-full flex flex-col">
           <nav className="flex gap-4 justify-between items-center font-bold text-2xl">
             <Link href="/">
               <a>
-                {<Image src={logo} alt={'logo'} width={100} height={100} />}
+                {<Image src={logo} alt={"logo"} width={100} height={100} />}
               </a>
             </Link>
 
@@ -52,8 +52,8 @@ const Index = () => {
       >
         <FeaturesWithImageRow
           reverse
-          title={''}
-          description={''}
+          title={""}
+          description={""}
           image={image1}
           features={translations.index.About1.features}
         ></FeaturesWithImageRow>
@@ -68,7 +68,7 @@ const Index = () => {
         <FeaturesWithImageRow
           narrowImage
           title={translations.index.About2.title}
-          description={''}
+          description={""}
           image={image2}
           features={translations.index.About2.features}
         ></FeaturesWithImageRow>
@@ -112,7 +112,7 @@ const Index = () => {
       {/* <Footer /> */}
 
       <Section className="py-6 bg-gray-100">
-        <FooterCentered logo={'Śledź nas na social mediach:'}></FooterCentered>
+        <FooterCentered logo={"Śledź nas na social mediach:"}></FooterCentered>
       </Section>
     </>
   );

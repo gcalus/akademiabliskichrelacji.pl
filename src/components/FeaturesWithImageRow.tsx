@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
-import className from 'classnames';
-import Image from 'next/image';
+import className from "classnames";
+import Image, { StaticImageData } from "next/image";
 
-import imageDefault from '../../public/assets/images/kurs2.png';
+import imageDefault from "../../public/assets/images/kurs2.png";
 
 type IFeaturesWithImageRowProps = {
   title?: string | ReactNode;
@@ -24,26 +24,26 @@ const FeaturesWithImageRow = ({
   children,
   features,
   narrowImage,
-  punctor = '–',
+  punctor = "–",
 }: IFeaturesWithImageRowProps) => {
-  const verticalFeatureClass = className('flex', 'flex-wrap', 'items-center', {
-    'flex-row-reverse': reverse,
+  const verticalFeatureClass = className("flex", "flex-wrap", "items-center", {
+    "flex-row-reverse": reverse,
   });
 
-  const class2 = className('w-full', 'sm:px-6', {
-    'lg:w-2/3': narrowImage,
-    'lg:w-1/2': !narrowImage,
+  const class2 = className("w-full", "sm:px-6", {
+    "lg:w-2/3": narrowImage,
+    "lg:w-1/2": !narrowImage,
   });
 
   const class3 = className(
-    'w-full',
-    'p-6',
-    'mx-auto',
-    'w-full',
-    'max-w-[400px]',
+    "w-full",
+    "p-6",
+    "mx-auto",
+    "w-full",
+    "max-w-[400px]",
     {
-      'lg:w-1/3': narrowImage,
-      'lg:w-1/2': !narrowImage,
+      "lg:w-1/3": narrowImage,
+      "lg:w-1/2": !narrowImage,
     }
   );
 
