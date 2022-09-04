@@ -11,9 +11,10 @@ const VARIANTS = {
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
   variant?: keyof typeof VARIANTS;
   className?: string;
+  onClick?: () => void;
+  children: string;
 };
 
 const SIZES = {
@@ -28,7 +29,11 @@ const Button = (props: IButtonProps) => {
     "inline-block rounded-md text-center": true,
   });
 
-  return <div className={btnClass}>{props.children}</div>;
+  return (
+    <button className={btnClass} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
 };
 
 export { Button };
