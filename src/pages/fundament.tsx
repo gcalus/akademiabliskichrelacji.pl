@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-key */
 import { BookOpenIcon, PlayIcon, UsersIcon } from "@heroicons/react/outline";
+import { CheckCircleIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,7 +26,6 @@ import { Section } from "../components/Section";
 import { ShortDivider } from "../components/ShortDivider";
 import { StickyBackground } from "../components/StickyBackground";
 import { TestimonialsRow } from "../components/TestimonialsRow";
-// import UsersIcon from "../icons/UsersIcon.svg";
 import { AppConfig } from "../utils/AppConfig";
 import useScrollTo from "../utils/useScrollTo";
 
@@ -438,19 +439,96 @@ const Index = () => {
       >
         <PricingCardRow
           className="mx-auto mb-8"
-          features={[
-            "Start kursu 30.05.2022",
-            "8 nagrań video podzielonych na 2 moduły kursowe",
-            "Dwugodzinne warsztaty",
-            "2 spotkania na żywo podsumowujące moduły i sprawdzające postępy",
-            "Spotkanie na zoomie 2 miesiące po zakończeniu kursu podczas którego sprawdzimy czy udaje się realizować cele, dostaniesz kolejną dawkę motywacji i ustalisz plan działania na dalszą drogę po zakończeniu kursu.",
-            "2 konsultacje 1:1",
-            "Nagranie webinaru “granice w relacjach”",
-            "70-stronnicowy workbook",
-            "Bezterminowy dostęp do zamkniętej grupy na facebooku i moje merytoryczne wsparcie przez cały okres trwania kursu",
-            "Dostęp do materiałów na dwa lata",
+          cards={[
+            {
+              title: "basic",
+              features: [
+                ["-", "Pół roku dostępu do materiałów kursowych"],
+                ["-", "Kurs “zbuduj solidny fundament relacji”"],
+                ["-", "70- stronicowy workbook"],
+                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
+                ["-", "Konsultacja 45 minutowa"],
+                ["-", "spotkanie 1:1 20-to minutowe"],
+              ],
+              price: "379",
+            },
+            {
+              title: "standard",
+              features: [
+                [
+                  "-",
+                  <>
+                    <span className="font-semibold text-gray-700">Rok</span>{" "}
+                    dostępu do materiałów kursowych
+                  </>,
+                ],
+                ["-", "Kurs “zbuduj solidny fundament relacji”"],
+                ["-", "70- stronicowy workbook"],
+                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
+                ["-", "Konsultacja 45 minutowa"],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  <>
+                    <span className="font-semibold text-gray-700">2x</span>{" "}
+                    spotkanie 1:1 20-to minutowe
+                  </>,
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  "2 nagrania sesji Q&A z poprzedniej edycji kursu",
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  "Nagranie webinaru “Granice w relacjach”",
+                ],
+              ],
+              price: "429",
+            },
+            {
+              title: "premium",
+              features: [
+                [
+                  "-",
+                  <>
+                    <span className="font-semibold text-gray-700">
+                      Dwa lata
+                    </span>{" "}
+                    dostępu do materiałów kursowych
+                  </>,
+                ],
+                ["-", "Kurs “zbuduj solidny fundament relacji”"],
+                ["-", "70- stronicowy workbook"],
+                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  <>
+                    <span className="font-semibold text-gray-700">2x</span>{" "}
+                    konsultacja 45-cio minutowa
+                  </>,
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  <>
+                    <span className="font-semibold text-gray-700">4x</span>{" "}
+                    spotkanie 1:1 20-to minutowe
+                  </>,
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  "2 nagrania sesji Q&A z poprzedniej edycji kursu",
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  "Nagranie webinaru “Granice w relacjach”",
+                ],
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-green-500" />,
+                  "Nagranie webinaru “5 błędów popełnianych w budowaniu relacji w związku”",
+                ],
+              ],
+              price: "539",
+            },
           ]}
-          price="379"
         />
       </Section>
       <h2 className="max-w-screen-xl text-center mx-auto px-3 text-4xl text-gray-900 font-bold">
