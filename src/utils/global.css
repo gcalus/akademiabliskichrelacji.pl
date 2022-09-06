@@ -33,3 +33,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient-text-dark {
+  @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-accent {
+  @apply bg-gradient-to-tl from-indigo-500 via-purple-800 to-black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

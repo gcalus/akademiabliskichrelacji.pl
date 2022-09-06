@@ -496,6 +496,7 @@ const Index = () => {
                 ["-", "spotkanie 1:1 20-to minutowe"],
                 ["-", "Gwarancja satysfakcji*"],
               ],
+              oldPrice: "479",
               price: "419",
             },
             {
@@ -504,7 +505,7 @@ const Index = () => {
                 [
                   "-",
                   <>
-                    <span className="font-semibold text-gray-700">Rok</span>{" "}
+                    <span className="font-semibold text-gray-800">Rok</span>{" "}
                     dostępu do materiałów kursowych
                   </>,
                 ],
@@ -515,7 +516,7 @@ const Index = () => {
                 [
                   <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
                   <>
-                    <span className="font-semibold text-gray-700 border-b-2 border-purple-600">
+                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
                       2x
                     </span>{" "}
                     spotkanie 1:1 20-to minutowe
@@ -531,6 +532,7 @@ const Index = () => {
                 ],
                 ["-", "Gwarancja satysfakcji*"],
               ],
+              oldPrice: "	589",
               price: "479",
             },
             {
@@ -539,7 +541,7 @@ const Index = () => {
                 [
                   "-",
                   <>
-                    <span className="font-semibold text-gray-700">
+                    <span className="font-semibold text-gray-800">
                       Dwa lata
                     </span>{" "}
                     dostępu do materiałów kursowych
@@ -551,12 +553,12 @@ const Index = () => {
                 [
                   <div className="relative -ml-2 flex-shrink-0">
                     <div className="absolute">
-                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-green-500" />
+                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-purple-600" />
                     </div>
-                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-green-500 rounded-full animate-spin-slow"></div>
+                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-purple-600 rounded-full animate-spin-slow"></div>
                   </div>,
                   <>
-                    <span className="font-semibold text-gray-700 border-b-2 border-purple-600">
+                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
                       2x
                     </span>{" "}
                     konsultacja 45-cio minutowa
@@ -565,7 +567,7 @@ const Index = () => {
                 [
                   <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
                   <>
-                    <span className="font-semibold text-gray-700 border-b-2 border-purple-600">
+                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
                       4x
                     </span>{" "}
                     spotkanie 1:1 20-to minutowe
@@ -582,14 +584,15 @@ const Index = () => {
                 [
                   <div className="relative -ml-2 flex-shrink-0">
                     <div className="absolute">
-                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-green-500" />
+                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-purple-600" />
                     </div>
-                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-green-500 rounded-full animate-spin-slow"></div>
+                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-purple-600 rounded-full animate-spin-slow"></div>
                   </div>,
                   "Nagranie webinaru “5 błędów popełnianych w budowaniu relacji w związku”",
                 ],
                 ["-", "Gwarancja satysfakcji*"],
               ],
+              oldPrice: "719",
               price: "589",
             },
           ]}

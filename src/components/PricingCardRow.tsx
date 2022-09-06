@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-import { FundamentButton } from "./FundamentButton";
 import { ShortDivider } from "./ShortDivider";
 
 type Card = {
   title: string;
   features: [punctor: string | ReactNode, text: string | ReactNode][];
+  oldPrice: string;
   price: string;
 };
 type Props = { cards: Card[]; className?: string };
@@ -24,15 +24,22 @@ const PricingCardRow = ({ cards, className }: Props) => (
           <div>
             <h5
               className={`mb-4 ml-2 mt-2 sm:ml-0 sm:mt-0 text-2xl font-semibold text-black ${
-                i >= 1 ? "gradient-text" : ""
+                i >= 1 ? "gradient-text drop-shadow-md" : ""
               }
               `}
             >
               {card.title}
-              {i === 2 && <ShortDivider my="my-0" />}
+              {i === 2 && <ShortDivider my="my-0 drop-shadow-md" />}
             </h5>
 
-            <div className="flex items-baseline text-gray-900">
+            <span className="self-start mt-3 line-through text-xl">
+              {card.oldPrice} zł
+            </span>
+            <div
+              className={`flex items-baseline -mt-3 text-gray-900 gap-1 ${
+                i === 1 && "gradient-text-dark drop-shadow-lg"
+              } ${i === 2 && "gradient-text-accent drop-shadow-lg"}`}
+            >
               <span className="text-5xl font-extrabold tracking-tight">
                 {card.price}
               </span>
@@ -44,7 +51,7 @@ const PricingCardRow = ({ cards, className }: Props) => (
                 <React.Fragment key={ii}>
                   <li className="flex space-x-3 text-lg sm:text-sm lg:text-lg">
                     <span>{f[0] || "-"}</span>
-                    <span className="font-normal text-gray-600">{f[1]}</span>
+                    <span className="font-normal text-gray-700">{f[1]}</span>
                   </li>
                   <div className="mx-auto w-3/4 border-t"></div>
                 </React.Fragment>
@@ -52,7 +59,36 @@ const PricingCardRow = ({ cards, className }: Props) => (
             </ul>
           </div>
           <div className="text-center">
-            <FundamentButton />
+            {i === 0 && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-zbuduj-solidny-fundament-relacji/"
+                className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-black via-purple-dark to-purple-800 drop-shadow-md transition-all hover:from-purple-dark hover:via-purple-900 hover:to-purple-700"
+              >
+                Dołącz do programu
+              </a>
+            )}
+            {i === 1 && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-standard-zbuduj-solidny-fundament-relacji/"
+                className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-purple-dark via-purple-900 to-pink-500 drop-shadow-md transition-all hover:from-purple-dark hover:via-purple-800 hover:to-pink-400"
+              >
+                Dołącz do programu
+              </a>
+            )}
+            {i === 2 && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-premiumzbuduj-solidny-fundament-relacji/"
+                className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-indigo-500 via-purple-900 to-pink-500 drop-shadow-md transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+              >
+                Dołącz do programu
+              </a>
+            )}
           </div>
         </div>
       ))}
