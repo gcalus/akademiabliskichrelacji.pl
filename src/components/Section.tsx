@@ -24,7 +24,9 @@ const Section = forwardRef(function Section(
       {(props.title || props.description) && (
         <div className="mb-12 text-center">
           {props.title && (
-            <h2 className="text-4xl text-gray-900 font-bold">{props.title}</h2>
+            <h2 className="text-2xl md:text-4xl text-gray-900 font-bold">
+              {props.title}
+            </h2>
           )}
           {props.description && (
             <div

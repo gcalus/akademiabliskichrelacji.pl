@@ -27,3 +27,9 @@
   width: 30px;
   top: 0;
 }
+
+.gradient-text {
+  @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-pink-500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

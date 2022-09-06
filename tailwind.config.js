@@ -58,6 +58,9 @@ module.exports = {
         "pos-0": "0% 0%",
         "pos-100": "100% 100%",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
   },
   variants: {},

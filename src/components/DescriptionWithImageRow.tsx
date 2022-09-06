@@ -52,7 +52,7 @@ const DescriptionWithImageRow = ({
         {children}
       </div>
 
-      <div className="w-full lg:w-1/2 p-6 mx-auto">
+      <div className="w-full max-w-[580px] lg:w-1/2 p-6 mx-auto">
         <Image src={image} alt="" className="rounded-2xl" placeholder="blur" />
       </div>
     </div>
