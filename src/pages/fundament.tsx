@@ -331,20 +331,22 @@ const Index = () => {
                 "Z czego składa się kurs “Zbuduj solidny fundament relacji”?",
               description: (
                 <div className="space-y-4">
-                  <div className="text-sm space-y-1">
-                    <p className="text-lg">
+                  <div className="space-y-1">
+                    <p className="text-xl">
                       <span className="font-semibold">
                         1 Moduł “Zobacz gdzie teraz jesteś”
                       </span>
                     </p>
-                    <p className="text-base">
+                    <p className="text-lg font-semibold">
                       Moduł składa się z czterech lekcji w formie nagrań na
                       platformie kursowej.
                     </p>
-                    <p>- Wróć do początku</p>
-                    <p>- Zajrzyj w głąb siebie</p>
-                    <p>- Naucz się dbać o siebie i wyrażać wdzięczność</p>
-                    <p>- Przyjrzyj się temu jak teraz wygląda Twój związek </p>
+                    <p>1. - Wróć do początku</p>
+                    <p>2. - Zajrzyj w głąb siebie</p>
+                    <p>3. - Naucz się dbać o siebie i wyrażać wdzięczność</p>
+                    <p>
+                      4. - Przyjrzyj się temu jak teraz wygląda Twój związek{" "}
+                    </p>
                     <p>
                       W tym module dogłębnie przeskanujesz swoją relację z
                       partnerem, co jest niezbędne do dalszej świadomej pracy.
@@ -357,21 +359,21 @@ const Index = () => {
                     </p>
                   </div>
 
-                  <div className="text-sm space-y-1">
-                    <p className="text-lg">
+                  <div className="space-y-1">
+                    <p className="text-xl">
                       <span className="font-semibold">
                         2 moduł “Zacznij działać”
                       </span>
                     </p>
-                    <p className="text-base">
+                    <p className="text-lg font-semibold">
                       Moduł składa się z czterech lekcji w formie nagrań na
                       platformie kursowej.
                     </p>
-                    <p>- Ustal swój cel</p>
-                    <p>- Ustal swoje normy i granice</p>
-                    <p>- Pozbądź się szkodliwych wymagań</p>
+                    <p>1. - Ustal swój cel</p>
+                    <p>2. - Ustal swoje normy i granice</p>
+                    <p>3. - Pozbądź się szkodliwych wymagań</p>
                     <p>
-                      - Odzyskaj swoją niezależność, nie odrzucając
+                      4. - Odzyskaj swoją niezależność, nie odrzucając
                       współzależności
                     </p>
                     <p>
@@ -597,11 +599,134 @@ const Index = () => {
             },
           ]}
         />
+        <Section className="mb-8 space-y-4">
+          <ParagraphRow
+            title={
+              <>
+                Gwarancja satysfakcji
+                <ShortDivider my={"my-1"} />
+              </>
+            }
+          >
+            <div className="max-w-prose">
+              <p>Masz obawy, czy ten program spełni Twoje oczekiwania?</p>
+              <p>
+                Jeśli z jakiegokolwiek powodu kurs nie będzie Ci odpowiadał, to
+                masz 30* dni na jego zwrot. Wystarczy, że napiszesz do mnie
+                maila. Zadam Ci wtedy kilka pytań co Ci się nie podobało i
+                zwrócę Ci pieniądze. Zależy mi na Twojej satysfakcji i chcę też
+                dać Ci pewność, że nie kupujesz kota w worku :)
+              </p>
+              <p className="text-lg">
+                *Możesz ubiegać się o pełny zwrot pieniędzy przed spotkaniami
+                1:1. Za każdą odbytą konsultację indywidualną od zwrotu zostanie
+                potrącona kwota wartości konsultacji.
+              </p>
+            </div>{" "}
+          </ParagraphRow>
+        </Section>
+
+        <Section className="mb-8">
+          <ParagraphRow
+            title={
+              <>
+                FAQ:
+                <ShortDivider my={"my-1"} />
+              </>
+            }
+          >
+            <div className="max-w-prose space-y-6 text-lg">
+              <p>
+                Poniżej znajdziesz odpowiedzi na pytania o program. Jeśli nie
+                znajdziesz odpowiedzi na swoje pytanie, napisz do mnie:
+                kontakt@gosiacalus.pl
+              </p>
+              <div className="space-y-1">
+                <p className="text-xl font-semibold">
+                  - Jak rozkłada się praca w programie w pakiecie basic?
+                </p>
+                <p>
+                  Po zakupie programu dostaniesz dostęp do platformy kursowej,
+                  na której będziesz samodzielnie przerabiać materiały. Na
+                  pierwsze spotkanie 20-minutowe umówimy się od dwóch do
+                  maksymalnie czterech tygodni po rozpoczęciu programu, w
+                  zależności od tego w jakim tempie będziesz przerabiała
+                  materiały. Na konsultację 45-minutową umówimy się podczas
+                  20-minutowego spotkania.
+                </p>
+                <p>
+                  Przewidywany czas trwania programu: od trzech do sześciu
+                  tygodni.
+                </p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xl font-semibold">
+                  - Jak rozkłada się praca w programie w pakiecie standard?
+                </p>
+                <p>
+                  Po zakupie programu dostaniesz dostęp do platformy kursowej,
+                  na której samodzielnie przerobisz pierwszy moduł kursu i
+                  odsłuchasz sesję Q&A. Na pierwsze spotkanie 20-minutowe
+                  umówimy się od tygodnia do dwóch tygodni po rozpoczęciu
+                  programu, w zależności od tego w jakim tempie będziesz
+                  przerabiała materiały. Na pierwszym spotkaniu 20-minutowym
+                  będziemy podsumowywać pierwszy moduł kursu. Tak samo będzie z
+                  drugim modułem kursu - najpierw przerobisz go samodzielnie na
+                  platformie i potem spotkamy się na 20-minutowe spotkanie, żeby
+                  podsumować treści i omówić trudności. Wtedy umówimy się też na
+                  konsultację 45-minutową.
+                </p>
+                <p>
+                  Przewidywany czas trwania programu: od trzech do sześciu
+                  tygodni.
+                </p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xl font-semibold">
+                  - Jak rozkłada się praca w programie w pakiecie premium?
+                </p>
+                <p>
+                  Po zakupie programu dostaniesz ode mnie propozycję terminu na
+                  pierwsze spotkanie 20-minutowe na którym omówimy dokładnie
+                  cele, które chcesz osiągnąć podczas swojej pracy. Po spotkaniu
+                  przerobisz pierwszy moduł kursu i odsłuchasz sesję Q&A. Na
+                  drugie spotkanie 20-minutowe umówimy się od tygodnia do dwóch
+                  tygodni po rozpoczęciu programu, w zależności od tego w jakim
+                  tempie będziesz przerabiała materiały. Na spotkaniu będziemy
+                  podsumowywać pierwszy moduł kursu. Tak samo będzie z drugim
+                  modułem kursu - najpierw przerobisz go samodzielnie na
+                  platformie i potem spotkamy się na 20-minutowe spotkanie, żeby
+                  podsumować treści i omówić trudności. Wtedy umówimy się też na
+                  dwie konsultacje 45-minutowe. Dobrze by było, żeby przerwa
+                  pomiędzy spotkaniami wynosiła minimum tydzień.
+                </p>
+                <p>
+                  Na ostatnie spotkanie 20-minutowe umówimy się około trzy
+                  miesiące po rozpoczęciu programu. Na tym spotkaniu podsumujemy
+                  całą pracę i sprawdzimy czy udało się zrealizować cele.
+                  Dostaniesz kolejną dawkę motywacji i ustalisz plan działania
+                  na dalszą drogę po zakończeniu kursu.
+                </p>
+                <p>Przewidywany czas trwania programu: trzy miesiące.</p>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xl font-semibold">
+                  - W jaki sposób odbywają się spotkania 1:1?
+                </p>
+                <p>
+                  Spotkania odbywają się na platformie zoom. Dostaniesz ode mnie
+                  link do spotkania, który możesz otworzyć z komputera lub z
+                  telefonu. Do spotkania potrzebujesz mieć kamerę i mikrofon.
+                </p>
+              </div>
+            </div>
+          </ParagraphRow>
+        </Section>
       </Section>
       {/* <Footer /> */}
 
       <Section className="py-6 bg-gray-100">
-        <FooterCentered logo={"Śledź nas na social mediach:"}></FooterCentered>
+        <FooterCentered logo={"Śledź nas na social mediach:"} />
       </Section>
     </>
   );
