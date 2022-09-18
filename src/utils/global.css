@@ -4,44 +4,46 @@
 
 @tailwind utilities;
 
-.inset-container:after,
-.inset-container:before {
-}
+@layer base {
+  .inset-container:after,
+  .inset-container:before {
+  }
 
-.inset-container:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-  height: 100%;
-  width: 30px;
-  top: 0;
-}
+  .inset-container:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    height: 100%;
+    width: 30px;
+    top: 0;
+  }
 
-.inset-container:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  height: 100%;
-  width: 30px;
-  top: 0;
-}
+  .inset-container:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 30px;
+    top: 0;
+  }
 
-.gradient-text {
-  @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-pink-500;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .gradient-text {
+    @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-pink-500;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.gradient-text-dark {
-  @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .gradient-text-dark {
+    @apply bg-gradient-to-tl from-indigo-500 via-purple-900 to-black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.gradient-text-accent {
-  @apply bg-gradient-to-tl from-indigo-500 via-purple-800 to-black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .gradient-text-accent {
+    @apply bg-gradient-to-tl from-indigo-500 via-purple-800 to-black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

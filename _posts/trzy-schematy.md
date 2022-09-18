@@ -1,13 +1,13 @@
 ---
-title: 'Dynamic Routing and Static Generation'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+title: "3 schematy zachowań w związku w obliczu problemów. Z którego korzystasz?"
+excerpt: "Wszystkie pary przechodzą przez różne konflikty, które wpływają na odczuwany poziom bliskości, bezpieczeństwa i szacunku. Niektórym udaje się szybko rozwiązywać spory, a u innych nawarstwiają się one przez lata i utrwalają się niewspierające schematy. W tym artykule opiszę 3 schematy zachowań w związku, które stosujemy w obliczu problemów opracowane przez Veronice Kallos – Lilly i Jennifer Fitzgerald."
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2020-03-16T05:35:07.322Z"
 author:
-  name: JJ Kasper
-  picture: '/assets/blog/authors/jj.jpeg'
+  name: Gosia
+  picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

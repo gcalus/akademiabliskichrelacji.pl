@@ -1,6 +1,6 @@
 import cn from "classnames";
+import Link from "next/link";
 
-import { EXAMPLE_PATH } from "../../utils/constants";
 import Container from "./container";
 
 type Props = {
@@ -29,14 +29,10 @@ const Alert = ({ preview }: Props) => (
           </>
         ) : (
           <>
-            The source code for this blog is{" "}
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="underline hover:text-blue-600 duration-200 transition-colors"
-            >
-              available on GitHub
-            </a>
-            .
+            Trwa sprzedaż programu mentoringowego:{" "}
+            <Link href="/fundament">
+              <a className="text-blue-700 hover:underline">kup teraz</a>
+            </Link>
           </>
         )}
       </div>

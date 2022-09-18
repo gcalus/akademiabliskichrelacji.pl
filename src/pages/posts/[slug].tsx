@@ -10,7 +10,6 @@ import PostHeader from "../../components/blog/post-header";
 import PostTitle from "../../components/blog/post-title";
 import type PostType from "../../interfaces/post";
 import { getPostBySlug, getAllPosts } from "../../utils/api";
-import { CMS_NAME } from "../../utils/constants";
 import markdownToHtml from "../../utils/markdownToHtml";
 
 type Props = {
@@ -29,14 +28,12 @@ export default function Post({ post, preview }: Props) {
       <Container>
         <Header />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <PostTitle>Wczytywanie…</PostTitle>
         ) : (
           <>
             <article className="mb-32">
               <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
+                <title>{post.title} | Akademia bliskich relacji</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader

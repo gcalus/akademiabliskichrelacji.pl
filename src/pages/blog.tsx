@@ -7,7 +7,6 @@ import Layout from "../components/blog/layout";
 import MoreStories from "../components/blog/more-stories";
 import Post from "../interfaces/post";
 import { getAllPosts } from "../utils/api";
-import { CMS_NAME } from "../utils/constants";
 
 type Props = {
   allPosts: Post[];
@@ -20,20 +19,22 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Blog | Akademia bliskich relacji</title>
         </Head>
         <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
+          <div className="max-w-screen-lg mx-auto">
+            <Intro />
+            {heroPost && (
+              <HeroPost
+                title={heroPost.title}
+                coverImage={heroPost.coverImage}
+                date={heroPost.date}
+                author={heroPost.author}
+                slug={heroPost.slug}
+                excerpt={heroPost.excerpt}
+              />
+            )}
+          </div>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

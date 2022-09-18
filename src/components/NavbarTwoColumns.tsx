@@ -15,7 +15,7 @@ const NavbarTwoColumns = ({
   children = (
     <>
       <li>
-        <Link href="https://gosiacalus.pl/">
+        <Link href="/blog">
           <a>Blog</a>
         </Link>
       </li>
