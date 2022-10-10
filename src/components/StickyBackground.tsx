@@ -10,6 +10,7 @@ type IBackgroundProps = {
   backgroundImage?: StaticImageData;
   children: ReactNode;
   contentBackground?: string;
+  className?: string;
 };
 
 const StickyBackground = ({
@@ -20,9 +21,10 @@ const StickyBackground = ({
   backdrop = "bg-gray-700/50",
   backgroundImage = backgroundImageDefault,
   contentBackground = "bg-white",
+  className,
   children,
 }: IBackgroundProps) => (
-  <div className={`relative ${backgroundHeightSpacing.h}`}>
+  <div className={`relative ${backgroundHeightSpacing.h} ${className}`}>
     <div className={"sticky h-0 top-0 -z-10"}>
       <div className={`relative ${backgroundHeightSpacing.h}`}>
         {

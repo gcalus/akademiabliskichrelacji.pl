@@ -21,26 +21,29 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>Blog | Akademia bliskich relacji</title>
         </Head>
-        <Container>
-          <div className="max-w-screen-lg mx-auto">
-            <Intro />
-            {heroPost && (
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.coverImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
-              />
-            )}
-          </div>
+        <Intro />
+        <Container className="xl:max-w-7xl">
+          {heroPost && (
+            <HeroPost
+              title={heroPost.title}
+              coverImage={heroPost.coverImage}
+              date={heroPost.date}
+              author={heroPost.author}
+              slug={heroPost.slug}
+              excerpt={heroPost.excerpt}
+            />
+          )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>
   );
 }
+
+export const defaultAuthor = {
+  name: "Gosia",
+  picture: "/assets/blog/author.png",
+};
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts([
@@ -53,6 +56,11 @@ export const getStaticProps = async () => {
   ]);
 
   return {
-    props: { allPosts },
+    props: {
+      allPosts: allPosts.map((post) => ({
+        ...post,
+        author: post.author || defaultAuthor,
+      })),
+    },
   };
 };

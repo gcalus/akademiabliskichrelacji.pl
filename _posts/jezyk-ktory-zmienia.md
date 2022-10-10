@@ -1,13 +1,10 @@
 ---
 title: "Język, który zmienia życie. Jak stosować porozumienie bez przemocy bez nadęcia?"
 excerpt: "“Kiedy wsłuchujemy się we własne i cudze głębokie potrzeby, tak jak naucza porozumienie bez przemocy, związki między ludźmi ukazują się nam w całkiem nowym świetle.”"
-coverImage: "/assets/blog/preview/cover.jpg"
+coverImage: "/assets/blog/jak-stosowac.jpg"
 date: "2020-03-16T05:35:07.322Z"
-author:
-  name: Gosia
-  picture: "/assets/blog/authors/joe.jpeg"
 ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+  url: "/assets/blog/jak-stosowac.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

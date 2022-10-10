@@ -1,13 +1,10 @@
 ---
 title: "Po co budować dobre relacje w związku? Co mówi o tym nauka – plusy i… minusy?"
 excerpt: "Od kilku lat działam w internecie pokazując jak budować dobre i trwałe relacje w rodzinie. Ale tak właściwie, to po co to robić?"
-coverImage: "/assets/blog/hello-world/cover.jpg"
+coverImage: "/assets/blog/po-co-budowac.webp"
 date: "2020-03-16T05:35:07.322Z"
-author:
-  name: Gosia
-  picture: "/assets/blog/authors/tim.jpeg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/blog/po-co-budowac.webp"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
