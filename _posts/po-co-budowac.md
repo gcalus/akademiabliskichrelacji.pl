@@ -7,10 +7,38 @@ ogImage:
   url: "/assets/blog/po-co-budowac.webp"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Od kilku lat działam w internecie pokazując jak budować dobre i trwałe relacje w rodzinie. Ale tak właściwie, to po co to robić?
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Dużo częściej mówi się o tym jakie skutki ma budowanie bliskich relacji z dzieckiem niż z partnerem. **Na pewno jest na to więcej dowodów naukowych, niż na związki partnerskie.** Jednak w tym wpisie chciałabym pokazać Ci, że dobre relacje w związku są naprawdę ważne i… mamy na to trochę dowodów.
 
-## Lorem Ipsum
+_Artykuł powstał na podstawie książki [“Sens miłości”](https://www.ceneo.pl/40550237) Sue Johnson i właśnie tam znajdują się wszystkie źródła do badań naukowych._
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+## **Jakie są plusy dobrych relacji?**
+
+- Jesteśmy zdrowsi i szczęśliwsi, kiedy odczuwamy bliskość innych ludzi i więź z nimi.
+- Stałe emocjonalne wsparcie obniża ciśnienie krwi i wzmacnia układ odpornościowy. Być może obniża także wskaźnik śmiertelności z powodu raka i częstotliwość chorób serca i infekcji. Wnioski z badań nie są jednoznaczne.
+- Prawdopodobieństwo przeżycia 15 lat po operacji wszczepienia bypassów wśród pacjentów pozostających w związku małżeńskim jest 3 krotnie większe, niż w wypadku pacjentów samotnych.
+- Bliski związek jest najsilniejszym czynnikiem prognostycznym szczęścia, silniejszym niż posiadanie dużych pieniędzy.
+- Dobry związek zmniejsza podatność na lęk i depresję, a zwiększa wytrzymałość na stres i traumę.
+
+## **Nasuwa się pytanie – czy te badania są wiarygodne?**
+
+Tego nie wiadomo i pewnie wielu lat potrzeba na to, żeby zbadać dokładnie relacje międzyludzkie. Jednak z tego co wiemy już na temat rozwoju dzieci, można wnioskować, że ogromną siłę ma bliski kontakt z drugim człowiekiem, bycie zrozumianym i wyrażanie uczuć w relacji.
+
+**Gdy mamy bezpieczne więzi, to stanowią one stabilny punkt oparcia, kiedy poznajemy nowe rzeczy – uczymy się czegoś, są przed nami różne trudności, czy wyzwania.** Trudniej jest otworzyć się na nowe doświadczenia, kiedy nasza uwaga i energia kierowana jest na zabieganie o bezpieczeństwo. Zdecydowanie łatwiej jest, jeśli mamy wsparcie. I jestem przekonana, że jeśli pomyślisz chwilę, to uda Ci się przypomnieć sytuacje, w których wsparcie partnera pomogło Ci ruszyć z czymś do przodu, a jego brak był Twoim stoperem.
+
+Kiedy człowiek się rodzi, to od razu zaczyna budować się między nim, a rodzicami więź. Każdy z nas potrzebuje tego do życia! Uważna obecność drugiej osoby, dotyk, czułość i empatia jest źródłem siły i radości. **Im lepszy i pewniejszy związek mamy z partnerem, tym lepiej reagujemy na jego potrzeby**. **W drugą stronę też to działa**
+
+Rozmawiając z różnymi kobietami, które czują, że nie układa im się w relacji z mężem, czy partnerem, często pojawia się zdanie “jestem nieszczęśliwa, tęsknie za bliskością, nie mam już na to siły”. Nigdy nie zdarzyło mi się usłyszeć “Oddaliłam się od swojego partnera i jestem taka szczęśliwa i mam mnóstwo siły do działania”. **To w jakim stanie są nasze relacje mają bezpośredni wpływ na to jak się czujemy.** Dlatego warto jest o nie dbać! Nie tylko po to, żeby dobrze się czuć w tym momencie, ale również dlatego, że to inwestycja na lata.
+
+## **Czy są jakieś minusy budowania dobrej relacji?**
+
+Nie sądzę. O ile nie podchodzimy do budowania związku w sposób toksyczny, lękowy, czy unikający, to naprawdę nie jestem w stanie znaleźć ani jednego minusa tworzenia zdrowej i bezpiecznej relacji.
+
+Możemy nie zdawać sobie na co dzień sprawy z tego, jak wielką siłę mają bliskie relacje. Mam nadzieję, że ten wpis pokazał Ci, że to nie jest tylko zwykłe gadanie “dobre relacje są ważne”. To poważna sprawa, która ma wpływ na nasze życie.
+
+---
+
+_Może Cię również zainteresować:  
+[Język, który zmienia życie. Jak stosować porozumienie bez przemocy w relacjach?](https://gosiacalus.pl/jezyk-ktory-zmienia-zycie-jak-stosowac-porozumienie-bez-przemocy-bez-nadecia/)  
+Cz[ęste problemy w związku, czy wiesz jak je rozwiązać?](https://gosiacalus.pl/problemy-w-malzenstwie-czy-wiesz-jak-je-rozwiazac/)_
