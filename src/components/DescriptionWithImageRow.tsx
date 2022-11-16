@@ -6,11 +6,12 @@ import Image, { StaticImageData } from "next/image";
 import imageDefault from "../../public/assets/images/kurs2.png";
 
 type IDescriptionWithImageRowProps = {
-  title?: string;
+  title?: string | ReactNode;
   description?: string | ReactNode;
   image: StaticImageData;
   reverse?: boolean;
   textRight?: boolean;
+  mt?: boolean;
   children?: ReactNode;
 };
 
@@ -20,10 +21,11 @@ const DescriptionWithImageRow = ({
   image = imageDefault,
   reverse,
   textRight,
+  mt,
   children,
 }: IDescriptionWithImageRowProps) => {
   const verticalFeatureClass = className(
-    "mt-20",
+    { "mt-20": mt },
     "flex",
     "flex-wrap",
     "items-center",

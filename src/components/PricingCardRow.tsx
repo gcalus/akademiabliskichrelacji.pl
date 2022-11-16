@@ -8,12 +8,27 @@ type Card = {
   oldPrice: string;
   price: string;
 };
-type Props = { cards: Card[]; className?: string };
+type Props = {
+  cards: Card[];
+  className?: string;
+  ctaText?: string;
+  ctaLinks?: string[];
+};
 
-const PricingCardRow = ({ cards, className }: Props) => (
+const PricingCardRow: React.FC<Props> = ({
+  cards,
+  className,
+  ctaText = "Dołącz do programu",
+  ctaLinks = [
+    "https://sklep.gosiacalus.pl/produkt/program-mentoringowy-zbuduj-solidny-fundament-relacji/",
+    "https://sklep.gosiacalus.pl/produkt/program-mentoringowy-standard-zbuduj-solidny-fundament-relacji/",
+    "https://sklep.gosiacalus.pl/produkt/program-mentoringowy-premiumzbuduj-solidny-fundament-relacji/",
+  ],
+  children,
+}) => (
   <div className={className}>
     <h5 className="text-center mb-4 text-2xl font-semibold text-black">
-      Zbuduj solidny fundament relacji:
+      {children || "Zbuduj solidny fundament relacji:"}
     </h5>
     <div className="flex flex-col space-y-1 sm:space-y-0 items-center sm:items-stretch sm:flex-row sm:justify-center sm:space-x-1">
       {cards.map((card, i) => (
@@ -63,30 +78,30 @@ const PricingCardRow = ({ cards, className }: Props) => (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-zbuduj-solidny-fundament-relacji/"
+                href={ctaLinks[i]}
                 className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-black via-purple-dark to-purple-800 drop-shadow-md transition-all hover:from-purple-dark hover:via-purple-900 hover:to-purple-700"
               >
-                Dołącz do programu
+                {ctaText}
               </a>
             )}
             {i === 1 && (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-standard-zbuduj-solidny-fundament-relacji/"
+                href={ctaLinks[i]}
                 className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-purple-dark via-purple-900 to-pink-500 drop-shadow-md transition-all hover:from-purple-dark hover:via-purple-800 hover:to-pink-400"
               >
-                Dołącz do programu
+                {ctaText}
               </a>
             )}
             {i === 2 && (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://sklep.gosiacalus.pl/produkt/program-mentoringowy-premiumzbuduj-solidny-fundament-relacji/"
+                href={ctaLinks[i]}
                 className="block mx-2 p-3 rounded-lg text-lg font-semibold text-white bg-gradient-to-tl from-indigo-500 via-purple-900 to-pink-500 drop-shadow-md transition-all duration-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
-                Dołącz do programu
+                {ctaText}
               </a>
             )}
           </div>

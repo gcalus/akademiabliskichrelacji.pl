@@ -122,7 +122,7 @@ const Index = () => {
 
       {/* <Footer /> */}
 
-      <FooterCentered logo={"Śledź nas na social mediach:"}></FooterCentered>
+      <FooterCentered logo={"Śledź nas na social mediach:"} />
     </>
   );
 };
