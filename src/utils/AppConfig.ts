@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: "Akademia bliskich relacji",
-  title: "Akademia bliskich relacji",
-  description: "Akademia bliskich relacji - Gosia Całus",
+  site_name: "Gosia Całus - Akademia bliskich relacji",
+  title: "Gosia Całus - Akademia bliskich relacji",
+  description: "Gosia Całus - Akademia bliskich relacji",
   locale: "pl",
 };
