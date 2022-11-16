@@ -18,6 +18,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
             rel="stylesheet"
           />
+          <meta
+            name="facebook-domain-verification"
+            content="chztizczwivhu48bqcgmzgfnrxldtu"
+          />
         </Head>
         <body className="antialiased text-slate-700">
           <Main />
