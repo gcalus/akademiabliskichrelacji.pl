@@ -6,10 +6,12 @@ import Link from "next/link";
 import image3 from "../../public/assets/images/1.jpg";
 import backgroundImage from "../../public/assets/images/header-jestem.png";
 import image1 from "../../public/assets/images/kurs1.png";
-import kurs2 from "../../public/assets/images/kurs2.png";
 import kurs3 from "../../public/assets/images/kurs3.png";
+import listyImage from "../../public/assets/images/listy.png";
 import logo from "../../public/assets/images/logo_new.png";
 import questionsImage from "../../public/assets/images/questions2.png";
+import wyzwanie from "../../public/assets/images/wyzwanie.png";
+import { Button } from "../components/Button";
 import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
 import { FeaturesRow } from "../components/FeaturesRow";
 import { FeaturesWithImageRow } from "../components/FeaturesWithImageRow";
@@ -222,7 +224,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
       <Section className="pt-10">
         <FeaturesWithImageRow
           title="Jak wygląda przebieg wyzwania?"
-          image={kurs2}
+          image={wyzwanie}
           features={[
             "Codziennie o 6:00 rano dostajesz na maila zadanie do wykonania i opis",
             "Zadania są krótkie - trwają maksymalnie do kilku minut",
@@ -277,6 +279,35 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
       >
         Dołącz do wyzwania:
       </PricingCardRow>
+      <Section>
+        <DescriptionWithImageRow
+          title={"Newsletter"}
+          description={
+            <>
+              <p className="mb-4">
+                Od sierpnia 2021 prowadzę systematyczną wysyłkę „listu do domu”,
+                czyli newslettera o dbaniu o relacje i komunikacje w rodzinie,
+                który czyta kilkaset osób. To jedyny newsletter w całym
+                internecie, który bierze pod uwagę zarówno relację z mężem jak i
+                z dziećmi!
+              </p>
+              <p>
+                Dołącz do newslettera, żeby otrzymać darmowego ebooka, w którym
+                przeczytasz aż 3 odcinki serialu o komunikacji!
+              </p>
+            </>
+          }
+          image={listyImage}
+        >
+          <div className="whitespace-nowrap mt-3">
+            <Link href="https://gosiacalus.pl/newsletter/">
+              <a>
+                <Button variant="outlined">Zapisz się na newsletter</Button>
+              </a>
+            </Link>
+          </div>
+        </DescriptionWithImageRow>
+      </Section>
       {/* <Footer /> */}
       <FooterCentered logo={"Śledź nas na social mediach:"} />
     </>
