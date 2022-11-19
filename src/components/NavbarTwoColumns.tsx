@@ -15,14 +15,10 @@ const NavbarTwoColumns = ({
   children = (
     <>
       <li>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
+        <a href="https://gosiacalus.pl/">Blog</a>
       </li>
       <li>
-        <Link href="https://sklep.gosiacalus.pl/">
-          <a>Sklep</a>
-        </Link>
+        <a href="https://sklep.gosiacalus.pl/">Sklep</a>
       </li>
     </>
   ),

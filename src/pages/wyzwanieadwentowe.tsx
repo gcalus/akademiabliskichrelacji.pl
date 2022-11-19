@@ -1,19 +1,30 @@
 /* eslint-disable react/jsx-key */
-import { CheckCircleIcon } from "@heroicons/react/outline";
+import {
+  CheckCircleIcon,
+  HandIcon,
+  MapIcon,
+  PlayIcon,
+  RssIcon,
+  UserGroupIcon,
+  UsersIcon,
+  WifiIcon,
+} from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
 
-import image3 from "../../public/assets/images/1.jpg";
+import gosiaa from "../../public/assets/images/gosiaa.jpg";
 import backgroundImage from "../../public/assets/images/header-jestem.png";
-import image1 from "../../public/assets/images/kurs1.png";
-import kurs3 from "../../public/assets/images/kurs3.png";
+import ideaImage from "../../public/assets/images/idea.png";
 import listyImage from "../../public/assets/images/listy.png";
 import logo from "../../public/assets/images/logo_new.png";
+import prezent from "../../public/assets/images/prezent.jpg";
 import questionsImage from "../../public/assets/images/questions2.png";
+import wparze from "../../public/assets/images/w-parze.jpg";
 import wyzwanie from "../../public/assets/images/wyzwanie.png";
+import { BigFeaturesRow } from "../components/BigFeaturesRow";
 import { Button } from "../components/Button";
 import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
-import { FeaturesRow } from "../components/FeaturesRow";
+import { FancyIcon } from "../components/FancyIcon";
 import { FeaturesWithImageRow } from "../components/FeaturesWithImageRow";
 import { FooterCentered } from "../components/FooterCentered";
 import { Meta } from "../components/Meta";
@@ -67,24 +78,35 @@ const Index = () => {
         className="pt-10 bg-white"
         title='Dołącz do trzeciej edycji wyzwania adwentowego "Jestem dla
         Ciebie", sama lub z mężem!'
-        description="Przekonaj się, że wcale nie trzeba wiele, żeby w Twoim domu
-        codziennie było pełno miłości, drobnych gestów i słów wsparcia."
+        description={
+          <p className="px-3 text-justify italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)] space-y-2">
+            Przekonaj się, że wcale nie trzeba wiele, żeby w Twoim domu
+            codziennie było pełno miłości, drobnych gestów i słów wsparcia.
+          </p>
+        }
       >
         <DescriptionWithImageRow
-          image={image1}
+          image={prezent}
           title="Chciałabyś podnieść swoją relację w związku na wyższy poziom?"
-          description="To może być na początek mały i prosty gest – przytulenie, słowo
+          description={
+            <span>
+              To może być na początek mały i prosty gest – przytulenie, słowo
               wdzięczności, ciepła herbata przyniesiona na kanapę. Czasami, w
               trudach codzienności (a szczególnie kiedy ma się małe dzieci),
               możemy zapomnieć o takich drobiazgach, których potrzebuje każdy
-              związek. I właśnie to wyzwanie jest po to, żeby zmotywować Cię do
-              wprowadzania takich małych gestów miłości każdego dnia! Możesz
-              wzniecać ten ogień, małymi krokami i codziennie. Jestem pewna, że
-              szybko zobaczysz efekty!"
+              związek.{" "}
+              <span className="font-semibold">
+                I właśnie to wyzwanie jest po to, żeby zmotywować Cię do
+                wprowadzania takich małych gestów miłości każdego dnia!
+              </span>{" "}
+              Możesz wzniecać ten ogień, małymi krokami i codziennie. Jestem
+              pewna, że szybko zobaczysz efekty!
+            </span>
+          }
           textRight
         />
       </Section>
-      <Section>
+      <Section className="pt-16 pb-8">
         <ParagraphRow
           title={
             <>
@@ -111,19 +133,22 @@ const Index = () => {
               chwilkę, ale zapewniam Cię, że efekty dawania bezinteresownej
               miłości pojawią się bardzo szybko.
             </p>
-            <p>Skąd to wiem?</p>
-            <p>
+            <p className="font-semibold">Skąd to wiem?</p>
+            <p className="px-3 text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)] space-y-2 text-justify">
               Poprowadziłam już dwie edycje wyzwania adwentowego, w których
-              wzięło udział już ponad 500 osób - zarówno kobiet jak i mężczyzn.
-              Z relacji uczestników (i swoich własnych doświadczeń) mogę bez
-              zawahania powiedzieć, że to działa!
+              wzięło udział już{" "}
+              <span className="font-semibold">ponad 500 osób</span> - zarówno
+              kobiet jak i mężczyzn. Z relacji uczestników (i swoich własnych
+              doświadczeń) mogę bez zawahania powiedzieć, że to działa!
             </p>
             <p>
-              Po kilku dniach od startu wyzwania uczestniczki pisały do mnie, że
-              w ich domach zrobiło się przyjemniej, mężowie okazywali więcej
-              miłości i czułości, byli bardziej chętni do współpracy. Jedna
-              osoba napisała nawet, że jej mąż zaczął zwracać się do niej tak
-              czule, jak kiedyś – na początkowym etapie związku. Czytałam te
+              Po kilku dniach od startu wyzwania uczestniczki pisały do mnie, że{" "}
+              <span className="font-semibold">
+                w ich domach zrobiło się przyjemniej, mężowie okazywali więcej
+                miłości i czułości, byli bardziej chętni do współpracy.
+              </span>{" "}
+              Jedna osoba napisała nawet, że jej mąż zaczął zwracać się do niej
+              tak czule, jak kiedyś – na początkowym etapie związku. Czytałam te
               wszystkie wiadomości ze wzruszeniem i takim poczuciem, że naprawdę
               nie trzeba wiele, żeby poprawić jakość swojego życia w związku!
             </p>
@@ -138,30 +163,89 @@ const Index = () => {
           </div>
         </ParagraphRow>
       </Section>
+      <div className="flex justify-center mb-8">
+        <WyzwaniePricingButton onClick={scrollToPricing} />
+      </div>
       <Section className="pt-0">
         <DescriptionWithImageRow
           title="Kim jestem?"
-          image={image3}
+          image={gosiaa}
           description="Nazywam się Gosia Całus i jestem mentorką bliskich relacji. Uczę tego co zrobić, żeby podnieść swoje relacje na wyższy poziom i czerpać większą satysfakcję z bycia rodzicem, partnerem, czy żoną.
 Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i komunikacyjne i szukają rzetelnej i sprawdzonej wiedzy w tym temacie."
           textRight
         />
       </Section>
       <Section className="pt-5">
-        <FeaturesRow
-          title="Czy wiesz, że dzięki udziałowi w wyzwaniu zadbasz aż o pięć z siedmiu zasad udanego małżeństwa według Johna Gottmana? To wybitny naukowiec badający funkcjonowanie małżeństwa i rodziny."
-          features={[
-            "zaktualizujesz mapę świata partnera (czyli dowiesz się więcej na jego temat)",
-            "będziesz pielęgnować uczucie sympatii i podziwu dla partnera",
-            "zwrócicie się ku sobie, zamiast odwracać się od siebie",
-            "zaczniecie rozpoznawać sygnały partnera",
-            "odnajdziecie poczucie wspólnoty",
-          ]}
-        />
+        <div className="text-center">
+          <BigFeaturesRow
+            title={
+              <>
+                <p className="max-w-prose mx-auto">
+                  Czy wiesz, że dzięki udziałowi w wyzwaniu zadbasz aż o pięć z
+                  siedmiu zasad udanego małżeństwa według Johna Gottmana?
+                </p>
+                <p className="font-normal text-lg mt-2">
+                  To wybitny naukowiec badający funkcjonowanie małżeństwa i
+                  rodziny.
+                </p>
+              </>
+            }
+            features={[
+              {
+                title:
+                  "1. zaktualizujesz mapę świata partnera (czyli dowiesz się więcej na jego temat)",
+                image: (
+                  <FancyIcon>
+                    <MapIcon className="w-10 h-10 text-white" />
+                  </FancyIcon>
+                ),
+                feature: "",
+              },
+              {
+                title:
+                  "2. będziesz pielęgnować uczucie sympatii i podziwu dla partnera",
+                image: (
+                  <FancyIcon>
+                    <HandIcon className="w-10 h-10 text-white" />
+                  </FancyIcon>
+                ),
+                feature: "",
+              },
+              {
+                title:
+                  "3. zwrócicie się ku sobie, zamiast odwracać się od siebie",
+                image: (
+                  <FancyIcon>
+                    <UsersIcon className="w-10 h-10 text-white" />
+                  </FancyIcon>
+                ),
+                feature: "",
+              },
+              {
+                title: "4. zaczniecie rozpoznawać sygnały partnera",
+                image: (
+                  <FancyIcon>
+                    <RssIcon className="w-10 h-10 text-white" />
+                  </FancyIcon>
+                ),
+                feature: "",
+              },
+              {
+                title: "5. odnajdziecie poczucie wspólnoty",
+                image: (
+                  <FancyIcon>
+                    <UserGroupIcon className="w-10 h-10 text-white" />
+                  </FancyIcon>
+                ),
+                feature: "",
+              },
+            ]}
+          />
+        </div>
       </Section>
-      <Section className="pt-5">
+      <Section className="py-10">
         <DescriptionWithImageRow
-          image={kurs3}
+          image={wparze}
           title="Dołącz sama lub w parze!"
           description={
             <div className="space-y-4 max-w-prose mx-auto">
@@ -186,7 +270,10 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
           reverse
         />
       </Section>
-      <Section className="pt-6 max-w-prose">
+      <div className="flex justify-center mb-2">
+        <WyzwaniePricingButton onClick={scrollToPricing} />
+      </div>
+      <Section className="pt-6 max-w-4xl mx-auto">
         <ParagraphRow
           title={
             <>
@@ -197,15 +284,39 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
         >
           <ul className="space-y-4 max-w-prose">
             <li>
-              - Dostaniesz motywację do codziennego robienia małych gestów dla
+              <span
+                style={{
+                  filter:
+                    "invert(17%) sepia(52%) saturate(2355%) hue-rotate(271deg) brightness(92%) contrast(84%)",
+                }}
+              >
+                <Image alt="" src={ideaImage} />{" "}
+              </span>
+              Dostaniesz motywację do codziennego robienia małych gestów dla
               swojego męża/żony
             </li>
             <li>
-              - Poznasz pomysły na wspólne spędzanie czasu, które będziesz mogła
+              <span
+                style={{
+                  filter:
+                    "invert(17%) sepia(52%) saturate(2355%) hue-rotate(271deg) brightness(92%) contrast(84%)",
+                }}
+              >
+                <Image alt="" src={ideaImage} />{" "}
+              </span>
+              Poznasz pomysły na wspólne spędzanie czasu, które będziesz mogła
               później wiele razy wykorzystać
             </li>
             <li>
-              - Wyrobisz sobie nawyk!
+              <span
+                style={{
+                  filter:
+                    "invert(17%) sepia(52%) saturate(2355%) hue-rotate(271deg) brightness(92%) contrast(84%)",
+                }}
+              >
+                <Image alt="" src={ideaImage} />{" "}
+              </span>
+              Wyrobisz sobie nawyk!
               <p className="ml-3 text-base leading-7">
                 Właśnie tak działa codzienne robienie zadań, że po jakimś czasie
                 codzienne robienie miłych gestów dla partnera staje się
@@ -215,8 +326,16 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
               </p>
             </li>
             <li>
-              - Przygotujesz się do tego, żeby spędzić święta w atmosferze
-              miłości i spokoju
+              <span
+                style={{
+                  filter:
+                    "invert(17%) sepia(52%) saturate(2355%) hue-rotate(271deg) brightness(92%) contrast(84%)",
+                }}
+              >
+                <Image alt="" src={ideaImage} />{" "}
+              </span>
+              Przygotujesz się do tego, żeby spędzić święta w atmosferze miłości
+              i spokoju
             </li>
           </ul>
         </ParagraphRow>
@@ -225,6 +344,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
         <FeaturesWithImageRow
           title="Jak wygląda przebieg wyzwania?"
           image={wyzwanie}
+          punctor={<span className="text-purple-500">✔</span>}
           features={[
             "Codziennie o 6:00 rano dostajesz na maila zadanie do wykonania i opis",
             "Zadania są krótkie - trwają maksymalnie do kilku minut",
