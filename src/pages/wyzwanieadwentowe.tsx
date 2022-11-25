@@ -378,7 +378,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
               ],
             ],
             oldPrice: "44,90",
-            price: "29,90",
+            price: "34,90",
           },
           {
             title: "Wyzwanie adwentowe „Jestem dla Ciebie” 2022 dla pary",
@@ -393,7 +393,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
               ],
             ],
             oldPrice: "79,90",
-            price: "39,90",
+            price: "49,90",
           },
         ]}
       >
