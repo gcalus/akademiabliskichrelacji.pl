@@ -5,7 +5,7 @@ import { ShortDivider } from "./ShortDivider";
 type Card = {
   title: string;
   features: [punctor: string | ReactNode, text: string | ReactNode][];
-  oldPrice: string;
+  oldPrice?: string;
   price: string;
 };
 type Props = {
@@ -47,9 +47,11 @@ const PricingCardRow: React.FC<Props> = ({
               {i === 2 && <ShortDivider my="my-0 drop-shadow-md" />}
             </h5>
 
-            <span className="self-start mt-3 line-through text-xl">
-              {card.oldPrice} zł
-            </span>
+            {card.oldPrice && (
+              <span className="self-start mt-3 line-through text-xl">
+                {card.oldPrice} zł
+              </span>
+            )}
             <div
               className={`flex items-baseline -mt-3 text-gray-900 gap-1 ${
                 i === 1 && "gradient-text-dark drop-shadow-lg"

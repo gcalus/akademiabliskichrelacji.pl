@@ -377,8 +377,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
                 "dostęp do zamkniętej grupy na facebooku, na której motywujemy się do robienia zadań",
               ],
             ],
-            oldPrice: "44,90",
-            price: "34,90",
+            price: "44,90",
           },
           {
             title: "Wyzwanie adwentowe „Jestem dla Ciebie” 2022 dla pary",
@@ -392,8 +391,7 @@ Pracuję z osobami, które pragną rozwinąć swoje umiejętności relacyjne i k
                 "dostęp do zamkniętej grupy na facebooku, na której motywujemy się do robienia zadań (osobna dla mężczyzn i kobiet)",
               ],
             ],
-            oldPrice: "79,90",
-            price: "49,90",
+            price: "79,90",
           },
         ]}
       >
