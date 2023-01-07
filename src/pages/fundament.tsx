@@ -12,14 +12,15 @@ import Link from "next/link";
 import image3 from "../../public/assets/images/1.jpg";
 import womanImage2 from "../../public/assets/images/certificate-woman.png";
 import womanImage from "../../public/assets/images/creative-woman.png";
-import logo from "../../public/assets/images/cropped-logo.png";
 import ideaImage from "../../public/assets/images/idea.png";
 import image1 from "../../public/assets/images/kurs1.png";
+import logo from "../../public/assets/images/logo_new.png";
 import questionsImage2 from "../../public/assets/images/question4.png";
 import questionsImage from "../../public/assets/images/questions2.png";
 import { Accordion } from "../components/Accordion";
 import { BigFeaturesRow } from "../components/BigFeaturesRow";
 import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
+import { FakeAccordion } from "../components/FakeAccordion";
 import { FancyIcon } from "../components/FancyIcon";
 import { FeaturesWithImageRow } from "../components/FeaturesWithImageRow";
 import { FooterCentered } from "../components/FooterCentered";
@@ -47,11 +48,11 @@ const Index = () => {
         <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md h-full flex flex-col">
           <nav className="flex gap-4 justify-end items-center font-bold text-2xl">
             <Link href="/">
-              <a className="rounded-md shadow-white shadow h-[100px]">
+              <a className="rounded-md shadow-white shadow h-[150px]">
                 <Image
                   src={logo}
                   alt={"logo"}
-                  height={100}
+                  height={150}
                   className="rounded-md"
                 />
               </a>
@@ -60,7 +61,7 @@ const Index = () => {
           <div className="text-3xl sm:text-5xl font-title font-bold whitespace-pre-line leading-hero text-center my-auto">
             <h1>{"Zbuduj solidny fundament relacji"}</h1>
             <h2 className="text-2xl sm:text-3xl text-center">
-              {"Program mentoringowy"}
+              {"Program mentoringowy i kurs"}
             </h2>
           </div>
         </header>
@@ -77,10 +78,10 @@ const Index = () => {
             </div>
             <div className="italic text-purple-dark bg-purple-200/75 shadow-[0_0_20px_10px_rgb(233,213,255)] space-y-2">
               <p>
-                Zacznij w pełni świadomie budować relację w swoim związku i
-                wyznacz drogę, którą naprawdę chcesz podążać. Wyznacz realne
-                cele, zadbaj o swoje granice, ustal normy, którymi chcesz żyć na
-                co dzień.
+                Zacznij w pełni świadomie rozwijać relację w swoim związku i
+                wyznacz drogę, którą naprawdę chcesz podążać. Ustal realne cele,
+                zadbaj o swoje granice, wyznacz normy, którymi chcesz żyć na co
+                dzień.
               </p>
               <p>
                 Dzięki udziałowi w programie otrzymasz wsparcie i motywację,
@@ -122,9 +123,6 @@ const Index = () => {
             </span>
           }
           features={[
-            "Nie potrafisz zapanować nad swoimi emocjami? Krzyczysz na bliskich i potem tego żałujesz?",
-            "Masz poczucie, że kiedyś lepiej dogadywałaś się z partnerem, było między Wami więcej bliskości i nie kłóciliście się o mało ważne rzeczy?",
-            "Nie wiesz jak skutecznie zareagować, kiedy partner na Ciebie krzyczy?",
             "Czujesz, że pracujesz nad sobą i próbujesz się zmieniać, ale nie przynosi to efektu i nie wiesz w którym iść kierunku?",
             "W emocjach wypowiadasz słowa, których później żałujesz?",
             "Zależy Ci na dobrej relacji z partnerem?",
@@ -208,13 +206,8 @@ const Index = () => {
                 relacje i komunikaty wpływają na jakość życia. Stworzyłam
                 autorskie kursy i wyzwania rozwojowe o budowaniu dobrych relacji
                 i rozwiązywaniu konfliktów, w których wzięło udział już ponad
-                1000 osób! Mam na swoim koncie dziesiątki godzin konsultacji z
+                1500 osób! Mam na swoim koncie dziesiątki godzin konsultacji z
                 zadowolonymi klientkami.
-              </p>
-              <p>
-                Jestem muzykoterapeutką oraz certyfikowanym konsultantem
-                kryzysowym, czyli osobą która udziela pierwszej pomocy
-                psychologicznej ludziom w kryzysie.
               </p>
             </div>
           }
@@ -278,7 +271,7 @@ const Index = () => {
                 </FancyIcon>
               ),
               feature:
-                "Otrzymasz dostęp do platformy kursowej na której znajdziesz nagrania video do każdego  z dwóch modułów kursu (łącznie 8 video). Do kursu dołączony jest obszerny 70-stronicowy workbook, w którym znajdziesz ćwiczenia do każdej lekcji.",
+                "Otrzymasz dostęp do platformy kursowej na której znajdziesz nagrania video do każdego z dwóch modułów kursu (łącznie 8 video). Do kursu dołączony jest obszerny 70-stronicowy workbook, w którym znajdziesz ćwiczenia do każdej lekcji.",
             },
             {
               title:
@@ -292,24 +285,14 @@ const Index = () => {
                 "W ebooku omawiam najważniejsze relacje, które budujesz w swoim życiu. Zajmiemy się Twoją relację ze sobą, z mężem/partnerem i dziećmi (jeśli je masz). Dzięki odpowiednim narzędziom zawartym w ebooku uzyskasz wgląd w swoje relacje i niezaspokojone potrzeby oraz znajdziesz strategie na ich zaspokojenie. Cały ebook naładowany jest wiedzą, konkretami i przykładami.",
             },
             {
-              title: "Spotkania 1:1 20-minutowe",
+              title: "Trzy godzinne spotkania grupowe",
               image: (
                 <FancyIcon>
                   <UsersIcon className="w-10 h-10 text-white" />
                 </FancyIcon>
               ),
               feature:
-                "Krótkie spotkania podczas których monitorujemy postępy pracy i omawiamy napotkane trudności. Z poprzedniej edycji programu wiem, że spotkania są bardzo motywujące do tego, żeby przerobić cały materiał kursowy i nie odkładać tego na później. ",
-            },
-            {
-              title: "Konsultacje 1:1 45-minutowe",
-              image: (
-                <FancyIcon>
-                  <UsersIcon className="w-10 h-10 text-white" />
-                </FancyIcon>
-              ),
-              feature:
-                "Podczas konsultacji zajmujemy się pracą nad tematami (przekonaniami, omawianiem schematów, itp.), które sprawiają klientce najwięcej trudności. Możemy pogłębiać tematy zawarte w kursie lub zająć się czymś innym, np. komunikacją. Zaproponuję temat, który wyda mi się najbardziej odpowiedni i wspólnie zdecydujemy co będziemy omawiać. Podczas konsultacji pracuję metodami mentoringowymi i warsztatowymi. ",
+                "Podczas spotkań monitorujemy postępy pracy i omawiamy napotkane trudności. Z poprzedniej edycji programu wiem, że spotkania są bardzo motywujące do tego, żeby przerobić cały materiał kursowy i nie odkładać tego na później. Spotkania odbędą się w formie warsztatów i będziemy poruszać na nich trudności i wątpliwości napotkane podczas przerabiania materiału kursowego. Przed przerobieniem pierwszego modułu kursu spotkamy się na pierwsze warsztaty 23 stycznia o 20.00. Kolejne warsztaty odbędą się 6.02 i 20.02 o 20.00 i potrwają około                   godziny. Jeśli będzie potrzeba, to przedłużymy spotkanie do dwóch godzin.",
             },
             {
               title: "Dodatkowe materiały",
@@ -319,11 +302,11 @@ const Index = () => {
                 </FancyIcon>
               ),
               feature:
-                "W zależności od wybranego wariantu programu otrzymasz dostęp do dwóch sesji Q&A (z poprzednich edycji kursu) i dwóch webinarów: “Pięć błędów popełnianych w budowaniu relacji w związku” i “Granice w relacjach”. ",
+                "Otrzymasz dostęp do dwóch sesji Q&A (z poprzednich edycji kursu) i dwóch webinarów: “Pięć błędów popełnianych w budowaniu relacji w związku” i “Granice w relacjach”. ",
             },
           ]}
         />
-        <Accordion
+        <FakeAccordion
           className="mx-auto max-w-prose"
           accordions={[
             {
@@ -444,6 +427,14 @@ const Index = () => {
       <TestimonialsRow
         testimonials={[
           {
+            text: "Dotychczasowa wiedza ułożyła mi się w głowie, było warto, dowiedziałam się też nowych rzeczy! Ćwiczenia były bardzo pomocne. Serdecznie polecam wszystkim, którzy się zastanawiają! To jest inwestycja w siebie i w związek. Gosia jest przemiła, jest bardzo zaangażowana i doskonale wszystko tłumaczy. Na prawdę warto!",
+            name: "Anna",
+          },
+          {
+            text: "Dzięki kursowi zrozumiałam, że muszę zadbać o siebie, a przez to też poznać siebie, by być w stanie dbać o relacje z innymi. Bardzo podobały mi się spotkanie mentoringowe z Gosią, workbook był świetny, na pewno będę do niego wracać. Widać, że kurs był przygotowany profesjonalnie i z nastawieniem, by kursantki mogły z niego jak najwięcej wynieść.",
+            name: "Maria",
+          },
+          {
             text: "Droga Gosiu, przerobiłam kurs i bardzo mi pomaga. Bardzo Ci dziękuję za wsparcie. Dziękuję, że mogłam do Ciebie napisać. Muszę przyznać, że praca nad tym co ja mogę zrobić daje mi dużo mocy sprawczej i energii. Ogromnym przełomem było dla mnie zdefiniowanie swoich potrzeb- o niektórych nie wiedziałam więc jak mogłam o nie dbać. Zadbanie o siebie w perspektywie nie urodowej ale np przez chwilę modlitwy czy czytania książki jest dla mnie zupełnie nowym odkryciem. Czuję się o niebo lepiej zadbana i zaopiekowana gdy dzięki Tobie sobie to zdefiniowałam i poukładałam. Wiesz, że gdy wypisałam sobie cele większość zależy ode mnie i od mojego działania. Wczoraj pierwszy raz od dłuższego czasu żartowałam z mężem. A wystarczyło tylko zapisać to w celach. Temat granic jest dla mnie bardzo istotny i od jakiegoś czasu nad nim pracuję- dla mnie bardzo ciekawe było to by zweryfikować które oczekiwania i wymagania są moje a które nabyłam w czasie dorastania. To prawda, że moja przyszłość zależy od moich działań widzę to. [...] Bardzo jestem wdzięczna za to że przygotowałaś ten kurs.",
             name: "Klaudia",
           },
@@ -488,114 +479,60 @@ const Index = () => {
           className="mx-auto mb-8"
           cards={[
             {
-              title: "basic",
+              title: "kurs",
               features: [
-                ["-", "Pół roku dostępu do materiałów kursowych"],
+                ["-", "rok dostępu do materiałów kursowych"],
                 ["-", "Kurs “zbuduj solidny fundament relacji”"],
                 ["-", "70- stronicowy workbook"],
                 ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
-                ["-", "Konsultacja 45 minutowa"],
-                ["-", "spotkanie 1:1 20-to minutowe"],
-                ["-", "Gwarancja satysfakcji*"],
-              ],
-              oldPrice: "479",
-              price: "419",
-            },
-            {
-              title: "standard",
-              features: [
+                ["-", "2 nagrania sesji Q&A z poprzedniej edycji kursu"],
+                ["-", "Nagranie webinaru “Granice w relacjach”"],
                 [
                   "-",
-                  <>
-                    <span className="font-semibold text-gray-800">Rok</span>{" "}
-                    dostępu do materiałów kursowych
-                  </>,
-                ],
-                ["-", "Kurs “zbuduj solidny fundament relacji”"],
-                ["-", "70- stronicowy workbook"],
-                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
-                ["-", "Konsultacja 45 minutowa"],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  <>
-                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
-                      2x
-                    </span>{" "}
-                    spotkanie 1:1 20-to minutowe
-                  </>,
-                ],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  "2 nagrania sesji Q&A z poprzedniej edycji kursu",
-                ],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  "Nagranie webinaru “Granice w relacjach”",
-                ],
-                ["-", "Gwarancja satysfakcji*"],
-              ],
-              oldPrice: "	589",
-              price: "479",
-            },
-            {
-              title: "Premium",
-              features: [
-                [
-                  "-",
-                  <>
-                    <span className="font-semibold text-gray-800">
-                      Dwa lata
-                    </span>{" "}
-                    dostępu do materiałów kursowych
-                  </>,
-                ],
-                ["-", "Kurs “zbuduj solidny fundament relacji”"],
-                ["-", "70- stronicowy workbook"],
-                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
-                [
-                  <div className="relative -ml-2 flex-shrink-0">
-                    <div className="absolute">
-                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-purple-600" />
-                    </div>
-                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-purple-600 rounded-full animate-spin-slow"></div>
-                  </div>,
-                  <>
-                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
-                      2x
-                    </span>{" "}
-                    konsultacja 45-cio minutowa
-                  </>,
-                ],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  <>
-                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
-                      4x
-                    </span>{" "}
-                    spotkanie 1:1 20-to minutowe
-                  </>,
-                ],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  "2 nagrania sesji Q&A z poprzedniej edycji kursu",
-                ],
-                [
-                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
-                  "Nagranie webinaru “Granice w relacjach”",
-                ],
-                [
-                  <div className="relative -ml-2 flex-shrink-0">
-                    <div className="absolute">
-                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-purple-600" />
-                    </div>
-                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-purple-600 rounded-full animate-spin-slow"></div>
-                  </div>,
                   "Nagranie webinaru “5 błędów popełnianych w budowaniu relacji w związku”",
                 ],
                 ["-", "Gwarancja satysfakcji*"],
               ],
-              oldPrice: "719",
-              price: "589",
+              oldPrice: "279",
+              price: "199",
+            },
+            {
+              title: "program mentoringowy",
+              features: [
+                [
+                  <CheckCircleIcon className="-ml-[6px] flex-shrink-0 w-5 h-5 text-purple-400" />,
+                  <>
+                    <span className="font-semibold text-gray-800">2 lata</span>{" "}
+                    dostępu do materiałów kursowych
+                  </>,
+                ],
+                ["-", "Kurs “zbuduj solidny fundament relacji”"],
+                ["-", "70- stronicowy workbook"],
+                ["-", "Ebook “Jak dbać o relacje w rodzinie...”"],
+                ["-", "2 nagrania sesji Q&A z poprzedniej edycji kursu"],
+                ["-", "Nagranie webinaru “Granice w relacjach”"],
+                [
+                  "-",
+                  "Nagranie webinaru “5 błędów popełnianych w budowaniu relacji w związku”",
+                ],
+                [
+                  <div className="relative -ml-2 flex-shrink-0">
+                    <div className="absolute">
+                      <CheckCircleIconSolid className="inset-0 w-6 h-6 text-purple-600" />
+                    </div>
+                    <div className="aboslute inset-0 w-6 h-6 border-dashed border-2 border-purple-600 rounded-full animate-spin-slow"></div>
+                  </div>,
+                  <>
+                    <span className="font-semibold text-gray-800 border-b-2 border-purple-600">
+                      3x
+                    </span>{" "}
+                    godzinne spotkanie mentoringowe
+                  </>,
+                ],
+                ["-", "Gwarancja satysfakcji*"],
+              ],
+              oldPrice: "399",
+              price: "299",
             },
           ]}
         />
@@ -643,71 +580,34 @@ const Index = () => {
               </p>
               <div className="space-y-1">
                 <p className="text-xl font-semibold">
-                  - Jak rozkłada się praca w programie w pakiecie basic?
+                  - Jak rozkłada się praca po zakupie samego kursu?
                 </p>
                 <p>
-                  Po zakupie programu dostaniesz dostęp do platformy kursowej,
-                  na której będziesz samodzielnie przerabiać materiały. Na
-                  pierwsze spotkanie 20-minutowe umówimy się od dwóch do
-                  maksymalnie czterech tygodni po rozpoczęciu programu, w
-                  zależności od tego w jakim tempie będziesz przerabiała
-                  materiały. Na konsultację 45-minutową umówimy się podczas
-                  20-minutowego spotkania.
+                  Po zakupie kursu dostaniesz dostęp do platformy kursowej, na
+                  której będziesz samodzielnie przerabiać materiały.
                 </p>
                 <p>
-                  Przewidywany czas trwania programu: od trzech do sześciu
+                  Przewidywany czas trwania programu: od dwóch do sześciu
                   tygodni.
                 </p>
               </div>
               <div className="space-y-1">
                 <p className="text-xl font-semibold">
-                  - Jak rozkłada się praca w programie w pakiecie standard?
+                  - Jak rozkłada się praca w programie mentoringowym?
                 </p>
                 <p>
-                  Po zakupie programu dostaniesz dostęp do platformy kursowej,
-                  na której samodzielnie przerobisz pierwszy moduł kursu i
-                  odsłuchasz sesję Q&A. Na pierwsze spotkanie 20-minutowe
-                  umówimy się od tygodnia do dwóch tygodni po rozpoczęciu
-                  programu, w zależności od tego w jakim tempie będziesz
-                  przerabiała materiały. Na pierwszym spotkaniu 20-minutowym
-                  będziemy podsumowywać pierwszy moduł kursu. Tak samo będzie z
-                  drugim modułem kursu - najpierw przerobisz go samodzielnie na
-                  platformie i potem spotkamy się na 20-minutowe spotkanie, żeby
-                  podsumować treści i omówić trudności. Wtedy umówimy się też na
-                  konsultację 45-minutową.
+                  Po zakupie programu dostaniesz dostęp do platformy kursowej na
+                  dwa lata. Przed przerobieniem pierwszego modułu kursu spotkamy
+                  się na pierwsze warsztaty 23 stycznia o 20.00. Kolejne
+                  warsztaty odbędą się 6.02 i 20.02 o 20.00 i potrwają około
+                  godziny. Jeśli będzie potrzeba, to przedłużymy spotkanie do
+                  dwóch godzin.
                 </p>
                 <p>
-                  Przewidywany czas trwania programu: od trzech do sześciu
-                  tygodni.
+                  Uwaga: żeby zapewnić jak największy komfort uczestniczkom
+                  programu i by zbudować atmosferę intymności, warsztaty nie
+                  będą nagrywane.
                 </p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-xl font-semibold">
-                  - Jak rozkłada się praca w programie w pakiecie premium?
-                </p>
-                <p>
-                  Po zakupie programu dostaniesz ode mnie propozycję terminu na
-                  pierwsze spotkanie 20-minutowe na którym omówimy dokładnie
-                  cele, które chcesz osiągnąć podczas swojej pracy. Po spotkaniu
-                  przerobisz pierwszy moduł kursu i odsłuchasz sesję Q&A. Na
-                  drugie spotkanie 20-minutowe umówimy się od tygodnia do dwóch
-                  tygodni po rozpoczęciu programu, w zależności od tego w jakim
-                  tempie będziesz przerabiała materiały. Na spotkaniu będziemy
-                  podsumowywać pierwszy moduł kursu. Tak samo będzie z drugim
-                  modułem kursu - najpierw przerobisz go samodzielnie na
-                  platformie i potem spotkamy się na 20-minutowe spotkanie, żeby
-                  podsumować treści i omówić trudności. Wtedy umówimy się też na
-                  dwie konsultacje 45-minutowe. Dobrze by było, żeby przerwa
-                  pomiędzy spotkaniami wynosiła minimum tydzień.
-                </p>
-                <p>
-                  Na ostatnie spotkanie 20-minutowe umówimy się około trzy
-                  miesiące po rozpoczęciu programu. Na tym spotkaniu podsumujemy
-                  całą pracę i sprawdzimy czy udało się zrealizować cele.
-                  Dostaniesz kolejną dawkę motywacji i ustalisz plan działania
-                  na dalszą drogę po zakończeniu kursu.
-                </p>
-                <p>Przewidywany czas trwania programu: trzy miesiące.</p>
               </div>
               <div className="space-y-1">
                 <p className="text-xl font-semibold">
