@@ -17,7 +17,6 @@ import image1 from "../../public/assets/images/kurs1.png";
 import logo from "../../public/assets/images/logo_new.png";
 import questionsImage2 from "../../public/assets/images/question4.png";
 import questionsImage from "../../public/assets/images/questions2.png";
-import { Accordion } from "../components/Accordion";
 import { BigFeaturesRow } from "../components/BigFeaturesRow";
 import { DescriptionWithImageRow } from "../components/DescriptionWithImageRow";
 import { FakeAccordion } from "../components/FakeAccordion";
@@ -47,7 +46,7 @@ const Index = () => {
       <StickyBackground backgroundHeightSpacing={{ h: "h-96", top: "top-96" }}>
         <header className="max-w-screen-xl mx-auto px-6 py-3 drop-shadow-md h-full flex flex-col">
           <nav className="flex gap-4 justify-end items-center font-bold text-2xl">
-            <Link href="/">
+            <Link href="https://sklep.gosiacalus.pl/">
               <a className="rounded-md shadow-white shadow h-[150px]">
                 <Image
                   src={logo}
@@ -85,9 +84,9 @@ const Index = () => {
               </p>
               <p>
                 Dzięki udziałowi w programie otrzymasz wsparcie i motywację,
-                które pomogą Ci ruszyć z miejsca. Dostaniesz sprawdzone metody i
-                narzędzia, które od razu wprowadzisz w życie i zmienisz swoją
-                relację na lepsze!
+                które pomogą Ci ruszyć z miejsca, który świadomie wybierzesz!
+                Dostaniesz sprawdzone metody i narzędzia, które od razu
+                wprowadzisz w życie i zmienisz swoją relację na lepsze!
               </p>
             </div>
           </div>
@@ -124,9 +123,13 @@ const Index = () => {
           }
           features={[
             "Czujesz, że pracujesz nad sobą i próbujesz się zmieniać, ale nie przynosi to efektu i nie wiesz w którym iść kierunku?",
+            "jesteś gotowa wziąć odpowiedzialność za swoją część relacji w związku?",
             "W emocjach wypowiadasz słowa, których później żałujesz?",
-            "Zależy Ci na dobrej relacji z partnerem?",
+            "Zależy Ci na dobrej relacji z partnerem i chcesz poprawić jakoś swojego życia i związku?",
             "Chciałabyś zacząć żyć wykorzystując w pełni swój potencjał jako kobieta i jako partnerka?",
+            "pragniesz odzyskać sprawczość w swoim życiu i związku?",
+            "masz dosyć niektórych zachowań partnera, ale nie wiesz jak sprawić żeby przestał to robić",
+            "chcesz zadbać nie tylko o relacje, ale też o samą siebie?",
           ]}
         />
       </Section>
@@ -219,28 +222,6 @@ const Index = () => {
       <div className="text-center py-6">
         <FundamentPricingButton onClick={scrollToPricing} />
       </div>
-
-      <Section className="pt-6">
-        <FeaturesWithImageRow
-          reverse
-          title={
-            <>
-              Ten program jest dla Ciebie jeśli:
-              <ShortDivider my={"my-1"} />
-            </>
-          }
-          image={womanImage2}
-          punctor={<span className="text-purple-500">✔</span>}
-          features={[
-            "jesteś gotowa wziąć odpowiedzialność za swoją część relacji w związku",
-            "chcesz poprawić komfort swojego życia i lepiej czuć się w swoim związku",
-            "pragniesz odzyskać sprawczość w swoim życiu i związku",
-            "próbujesz coś zmienić w swojej relacji, ale nie za bardzo wiesz za co się zabrać",
-            "masz dosyć niektórych zachowań partnera, ale nie wiesz jak sprawić żeby przestał to robić",
-            "chcesz zadbać nie tylko o relacje, ale też o samą siebie!",
-          ]}
-        />
-      </Section>
 
       <Section
         className="pt-6 space-y-10"
@@ -535,6 +516,10 @@ const Index = () => {
               price: "299",
             },
           ]}
+          ctaLinks={[
+            "https://sklep.gosiacalus.pl/produkt/solidny-fundament-zwiazku/",
+            "https://sklep.gosiacalus.pl/produkt/program-mentoringowy-premiumzbuduj-solidny-fundament-relacji/",
+          ]}
         />
         <Section className="mb-8 space-y-4">
           <ParagraphRow
@@ -607,16 +592,6 @@ const Index = () => {
                   Uwaga: żeby zapewnić jak największy komfort uczestniczkom
                   programu i by zbudować atmosferę intymności, warsztaty nie
                   będą nagrywane.
-                </p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-xl font-semibold">
-                  - W jaki sposób odbywają się spotkania 1:1?
-                </p>
-                <p>
-                  Spotkania odbywają się na platformie zoom. Dostaniesz ode mnie
-                  link do spotkania, który możesz otworzyć z komputera lub z
-                  telefonu. Do spotkania potrzebujesz mieć kamerę i mikrofon.
                 </p>
               </div>
             </div>
